@@ -1,0 +1,202 @@
+// Use DBML to define your database structure
+// Docs: https://dbml.dbdiagram.io/docs
+//Pagina donde se genero el diagrama de el DOM de la pagina ejemplo
+
+Table Document {
+  html lang [primary key]
+
+}
+
+Table DOM {
+  DOM_HTML lang [primary key]
+  head html
+  body html
+}
+Ref: DOM.body - BODY.body_ID
+
+Table HEAD {
+  head_ID DOM [primary key]
+  META charset 
+  meta name_newport
+  _meta content
+  title text [note: 'Ejemplo de pagina completa']
+  link rel_stylesheet
+  _link href_styles.css
+  style_css style.css
+}
+Table BODY {
+  body_ID DOM_html [primary key]
+  header DOM_html
+  nav DOM_html
+  main DOM_html
+  footer DOM_html
+
+}
+Ref: BODY.nav <> nav_Menu_navegacion.nav_ID
+Ref: BODY.main - main.main_ID
+Ref: BODY.footer - FOOTER.footer_ID
+Table Header_Encabezado {
+  header_ID DOM_html [primary key]
+  h1 text [note: "Bienvenidos a mi pagina web"]
+  p text [note: "Explora el contenido y conoce más sobre nuestros productos y servicios."]
+
+}
+Table nav_Menu_navegacion {
+  nav_ID html
+  a_home text [note: "Inicio"]
+  a_about text [note: "Acerca de"]
+  a_services text [note: "Servicios"]
+  a_contact text [note: "Contacto"]
+  
+}
+Table style_css {
+  style_ID css [primary key]
+  body style.css
+  header style.css
+  nav style.css
+  nav_a style.css
+  main style.css
+  _gallery_img style.css
+  dot_grid_container style.css
+  footer style.css
+  _table style.css
+  _table_th style.css
+  _table_td style.css
+}
+//////////////SECCIONES main//////////////
+Table main {
+  main_ID DOM_html [primary key]
+  section_gallery DOM_html
+  section_about DOM_html
+  section_services DOM_html
+  section_contact DOM_html
+
+}
+Ref: main.section_about > section_about.sec_about
+Ref: main.section_gallery > section_gallery.sec_gallery
+Ref: main.section_services > section_services.sec_services
+Ref: main.section_contact > section_contact.sec_contact
+
+
+
+Table section_gallery {
+  sec_gallery DOM_html [primary key]
+  h2 text [note: "GALERIA"]
+  div_gallery DOM_html
+}
+Ref: section_gallery.div_gallery < div_gallery.div_gallery_ID
+Table section_about {
+  sec_about DOM_html [primary key]
+  h2 text [note: "html: Acerca de nosotros"]
+  p text [note: "html: Somos una empresa dedicada a ofrecer soluciones innovadoras en tecnología y diseño. Nuestra misión es mejorar la vida de nuestros clientes a través de productos de alta calidad."]
+
+}
+Table section_services {
+ sec_services DOM_html [primary key]
+ h2 text [note: "Servicios y Precios"]
+ tabla_services DOM_html
+}
+Ref: section_services.tabla_services < tabla_services.tab_services
+Table section_contact {
+  sec_contact DOM_html [primary key]
+  h2 text [note: "Contacto"]
+  form_contacto DOM_html
+}
+//////////////////////////////////////////
+
+////****** DIV galeria ******////
+Table div_gallery {
+  div_gallery_ID DOM_html [primary key]
+  img_1 src_url //src="https://via.placeholder.com/300x200" alt="Imagen 1"
+  _img_1 text [note: "src=https://via.placeholder.com/300x200 alt=Imagen 1"]
+  img_2 src_url
+  _img_2 text [note: "url => imagen 2"]
+  img_3 src_url
+  _img_3 text [note: "url => imagen 3"]
+  img_4 src_url
+  _img_4 text [note: "url => imagen 4"]
+  img_5 src_url
+  _img_5 text [note: "url => imagen 5"]
+  img_6 src_url
+  _img_6 text [note: "url => imagen 6"]
+}
+/////////***** TABLA servicios *****////////////
+Table tabla_services {
+  tab_services DOM_html [primary key]
+  thead DOM_html
+  tbody DOM_html
+}
+Ref: tabla_services.thead - Thead.thead_ID
+Ref: tabla_services.tbody - Tbody.tbody_ID
+
+Table Thead {
+  thead_ID DOM_html [primary key]
+  tr_thead html
+}
+Table Thead_th {
+  thead_th DOM_html [primary key]
+  th_service text [note: "SERVICIO"]
+  th_description text [note: "DESCRIPCION"]
+  th_price text [note: "PRECIO"]
+}
+Ref: Thead.tr_thead <> Thead_th.thead_th
+
+Table Tbody {
+  tbody_ID DOM_html [primary key]
+  tr_tbody_1 html 
+  tr_tbody_2 html
+  tr_tbody_3 html 
+}
+Ref: Tbody.tr_tbody_1 <> Tbody_tr_1.tbody_td
+Ref: Tbody.tr_tbody_2 <> Tbody_tr_2.tbody_td
+Ref: Tbody.tr_tbody_3 <> Tbody_tr_3.tbody_td
+
+Table Tbody_tr_1 {
+  tbody_td DOM_html [primary key]
+  td_service text [note: "Consultoría"]
+  td_description text [note: "Asesoramiento especializado en tecnología y diseño."]
+  td_price text [note: "$100"]
+}
+Table Tbody_tr_2 {
+  tbody_td DOM_html [primary key]
+  td_service text [note: "Desarrollo Web"]
+  td_description text [note: "Creación de sitios web a medida y optimizados."]
+  td_price text [note: "$500"]
+}
+Table Tbody_tr_3 {
+  tbody_td DOM_html [primary key]
+  td_service text [note: "Diseño Gráfico"]
+  td_description text [note: "Diseño de identidad corporativa y material visual."]
+  td_price text [note: "$300"]
+}
+////////////////////////////////////////////////
+Table form_contact {
+  form_contact_ID DOM_html [primary key]
+  label_name html [note: "Nombre:"]
+  intput_name html_input
+  label_email text [note: "Correo Electronico:"]
+  input_email html_input
+  label_message text [note: "Mensaje:"]
+  textarea_msg html_textarea
+  input submit [note: "Enviar"]
+
+}
+Ref: section_contact.form_contacto < form_contact.form_contact_ID
+////////////////////////////////////////////////
+//FOOOOOOOTER
+Table FOOTER {
+  footer_ID DOM_html [primary key]
+  "p&copy" text [note: "&copy; 2025 Mi Página Web | Todos los derechos reservados"]
+
+}
+////////////////////////////////////////////////
+
+//Ref: posts.user_id > DOM.DOM_HTML // many-to-one
+
+//Ref: users.id < follows.following_user_id
+
+//Ref: users.id < follows.followed_user_id
+Ref: Document.html - DOM.DOM_HTML
+Ref: HEAD.head_ID - DOM.head
+Ref: HEAD.style_css < style_css.style_ID
+Ref: BODY.header - Header_Encabezado.header_ID
