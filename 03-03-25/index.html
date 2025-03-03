@@ -8,7 +8,35 @@
 </head>
 <body>
 
-  <table border="1">
+  <h1>Add Product</h1>
+
+  <form id="productForm">
+    <label for="nom_produc">NOM PRODUCTOS:
+        <input type="text" id="nom_produc" required>
+    </label>
+    <br><br>
+    
+    <label for="precio">PRECIO:
+        <input type="number" id="precio" required>
+    </label>
+    <br><br>
+    
+    <label for="des">DESCRIPCIÓN:
+        <textarea id="des" required></textarea>
+    </label>
+    <br><br>
+    
+    <label for="dispo">DISPONIBILIDAD:
+        <input type="number" id="dispo" required>
+    </label>
+    <br><br>
+
+    <button type="submit">Enviar</button>        
+</form>
+
+<hr>
+
+  <table border="1" id="productTable">
 
     <tr id="cab">
         <th  colspan="4">INFORMACION  DE LOS PRODUCTOS</th>
@@ -78,6 +106,32 @@
     </tr>
     
   </table>
+
+  <script>
+    document.getElementById("productForm").addEventListener("submit", function(event) {
+        event.preventDefault(); 
+
+       
+        let nomProducto = document.getElementById("nom_produc").value;
+        let precio = document.getElementById("precio").value;
+        let descripcion = document.getElementById("des").value;
+        let disponibilidad = document.getElementById("dispo").value;
+
+        // Crear una nueva fila
+        let newRow = document.createElement("tr");
+        newRow.innerHTML = `
+            <td>${nomProducto}</td>
+            <td>$${precio}</td>
+            <td>${descripcion}</td>
+            <td>${disponibilidad}</td>
+        `;
+
+       
+        document.querySelector("#productTable tbody").appendChild(newRow);
+
+        document.getElementById("productForm").reset();
+    });
+</script>
   
 </body>
 </html>
