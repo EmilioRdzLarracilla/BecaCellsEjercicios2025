@@ -16,8 +16,10 @@ document.addEventListener("DOMContentLoaded", function() {
         }
         if(productos.nombre === "" || productos.precio === "" || productos.descripcion === ""){
             alert("Por favor llena todos los campos");
-            return;
+            return
+            //salida temprana return;
         }
+
 
         console.log(nombreProducto)
         console.log(precioProducto)
@@ -41,6 +43,7 @@ document.addEventListener("DOMContentLoaded", function() {
         if(nombreProducto.textContent === nuevaCelda1.textContent){
             alert("El producto ya existe en la tabla");
             return; 
+            //salida temprana return;
 
         }
 

@@ -1,0 +1,18 @@
+*,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*
+        #id, p, .class{}
+        */
+label {
+  color: red;
+}
+form {
+    margin-top: 2rem;
+}
+button {
+    background-color: red;
+}
