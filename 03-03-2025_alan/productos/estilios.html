@@ -29,15 +29,15 @@
         </header>
         <!--ARTICLE -->
         <article>1
-                    <!--SECTION -->
-            <section>   1</section>
-            <section>   2</section>
-            <section>   3</section>
+            <!--SECTION -->
+            <section> 1</section>
+            <section> 2</section>
+            <section> 3</section>
         </article>
         <article>2
             <h2>Barrar de navegacion</h2>
             <nav>
-                <li>/       Lista</li>
+                <li>/ Lista</li>
             </nav>
         </article>
         <article>3</article>
@@ -56,9 +56,33 @@
     </main>
     <!-- Etiqueta para colapzar -->
     <details>
-        <summary >Detalles</summary>
-        <p>Este es un detalle de details</p>
+        <summary>Detalles</summary>
+        <p>Este es un detalle de details
+
+        </p>
     </details>
+    <dialog id="dialogo">
+        <button>Hola</button>
+
+        <p>
+            Esto se debe ocultar al dar al botton
+        </p>
+        <!--
+        $0.open = true
+        true
+        $0.onsuspend = false
+        false
+        $0.close()
+        VM937:1 Uncaught TypeError: $0.close is not a function
+            at <anonymous>:1:4
+        (anonymous) @ VM937:1Understand this errorAI
+        $0.close()
+        undefined
+        $0.open = true
+        true
+        -->
+    </dialog>
+
 
 </body>
 
