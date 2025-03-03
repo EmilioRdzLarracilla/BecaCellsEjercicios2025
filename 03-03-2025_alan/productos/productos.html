@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Productos</title>
+        <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table th, table td {
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+        </style>
+    </head>
+    <body>
+        <script src="./Productos.js"></script>
+        <form id="servicio-formulario">
+            <label for="servicio">Escribe tu servicio:</label>
+            <input id="servicio" name="servicio" type="text" placeholder="Escribe tu servicio">
+            <br>
+            <label for="precio">Escribe el precio:</label>
+            <input id="precio" name="precio" type="number" placeholder="Escribe el precio">
+            <br>
+            <label for="descripcion">Escribe tu descripcion:</label>
+            <textarea name="descripcion" id="descripcion" ></textarea>
+            <br>
+            <button type="submit">Agregar a tabla</button>
+
+        </form>
+        <table id="servicio-tabla" border="1">
+            <thead>
+                <tr>
+                    <th >Servico</th>
+                    <th>Precio</th>
+                    <th>descripcion</th>
+                </tr>
+            </thead>
+            <tbody id="cuerpo-tabla" ></tbody>
+        </table>
+        
+    </body>
+</html>

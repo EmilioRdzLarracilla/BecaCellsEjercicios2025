@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios HTML</title>
+</head>
+
+<body>
+    <form action="users.php" method="GET">
+        <!-- PARA COMENTAR -->
+        <label for="nombre">Nombre</label>
+        <input name="nombre" id="nombre" type="text" required placeholder="Escribe tu nombre">
+        <br>
+        <label for="acept">Aceptar terminos</label>
+        <input id="acept" type="checkbox">
+        <br>
+        <label for="accept">selecciona una de las 2 opciones</label>
+        <input id="accept1" name="accept" type="radio">A
+        <input id="accept2" name="accept" type="radio">B
+        <br>
+        <label for="options">Selecciona tu pais</label>
+        <select name="options" id="options">
+            <option selected value="">selecciona tu pais</option>
+            <option value="Mexico">Mexico</option>
+            <option value="Brazil">Brazil</option>
+            <option value="Paraguay">Paraguay</option>
+
+        </select>
+        <br>
+        <textarea maxlength="4" name="" id=""></textarea>
+        <br>
+        <label for="pass">Password </label>
+        <input name="pass" id="pass" type="password" required placeholder="Escribe tu password">
+        <br>
+        <input type="button" value="cliquea para Enviar">
+        <button>Hola</button>
+    </form>
+
+</body>
+
+</html>
