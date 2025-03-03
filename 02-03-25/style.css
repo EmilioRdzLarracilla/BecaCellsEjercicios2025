@@ -1,0 +1,40 @@
+*{
+    text-align: center;
+  }
+  
+  #azul{
+    background-color: #AED6F1  ;
+  }
+
+  #verde{
+    background-color: rgb(89, 161, 89)  ;
+  }
+
+  #amarillo{
+    background-color: yellow  ;
+  }
+
+  #purpura{
+    background-color: purple  ;
+  }
+
+  #naranja{
+    background-color:   orange;
+  }
+
+  #rosa{
+    background-color: pink  ;
+  }
+
+  #rojo{
+    background-color: red  ;
+  }
+
+  #gris{
+    background-color: gray ;
+  }
+
+ #cab{
+    background-color: black;
+    color: white;
+ }
