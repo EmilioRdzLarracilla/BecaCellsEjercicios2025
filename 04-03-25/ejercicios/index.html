@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio</title>
+  </head>
+  <body>
+    <label for="predictiveInput">SEARCH</label>
+    <input id="predictiveInput" type="text" />
+
+    <script>
+      const input = document.querySelector("#predictiveInput");
+      let texto = "";
+      const listToSearch = ["rojo", "azul", "verde"];
+      let listaFiltrada = [];
+
+      input.addEventListener("input", ({ data }) => {
+        texto += data;
+        listaFiltrada = listToSearch.filter((element) => {
+          return element === texto;
+        });
+
+        console.log(listaFiltrada);
+        if (listaFiltrada.length > 0) {
+          const ul = document.createElement("ol");
+          listaFiltrada.forEach((option) => {
+            const li = document.createElement("li");
+            li.innerText = option;
+            ul.appendChild(li);
+            document.body.appendChild(ul);
+          });
+        }
+      });
+    </script>
+  </body>
+</html>
