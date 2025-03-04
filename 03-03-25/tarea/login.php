@@ -31,7 +31,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             } else {
 
                 echo '<script>
-                alert("Contraseña in contraseña");
+                alert("Contraseña incontraseña");
                 window.location.href = "Index.php";
                 </script>';
                 exit;
