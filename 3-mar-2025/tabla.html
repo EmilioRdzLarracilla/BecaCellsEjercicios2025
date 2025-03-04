@@ -9,6 +9,17 @@
 <body>
     <h1>Lista de Productos</h1>
 
+    <form id="formulario">
+        <input type="text" id="nombre" placeholder="Nombre del Producto" required>
+        <input type="number" id="precio" placeholder="Precio" required>
+        <input type="text" id="descripcion" placeholder="Descripcion" required>
+        <select id="disponibilidad">
+            <option value="disponible">En stock</option>
+            <option value="no-disponible">Agotado</option>
+        </select>
+        <button type="submit">Agregar Producto</button>
+    </form>
+
     <table id="tabla">
         <thead>
             <tr>
