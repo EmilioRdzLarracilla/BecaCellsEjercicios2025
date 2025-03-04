@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla de Productos</title>
+    <link rel="stylesheet" href="./tabla.css">
+</head>
+<body>
+    <h1>Lista de Productos</h1>
+
+    <table id="tabla">
+        <thead>
+            <tr>
+                <th>Productos</th>
+                <th>Precio</th>
+                <th>Descripcion</th>
+                <th colspan="2">Disponibilidad</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td rowspan="2">Laptop</td>
+                <td>$1200</td>
+                <td>Laptop perfecta para este inicio de clases</td>
+                <td class="disponible">En stock</td>
+                <td><button onclick="cambiarColor(this)">Cambiar color</button></td>
+            </tr>
+
+            <tr>
+                <td>$1100</td>
+                <td>Version basica</td>
+                <td class="no-disponible">Agotado</td>
+                <td><button onclick="cambiarColor">Cambiar color</button></td>
+            </tr>
+
+            <tr>
+                <td>Teclado RGB</td>
+                <td>$150</td>
+                <td>Teclado RGB con piezas intercambiables</td>
+                <td class="disponible">En Stock</td>
+                <td><button onclick="cambiarColor(this)">Cambiar color</button></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script src="./formulario.js"></script>
+</body>
+</html>
