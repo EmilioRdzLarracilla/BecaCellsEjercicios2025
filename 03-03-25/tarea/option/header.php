@@ -18,7 +18,7 @@
 
         }
 
-        li:hover{
+        li{
         display: block;
         color: wheat;
         }
