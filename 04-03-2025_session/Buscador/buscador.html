@@ -17,11 +17,11 @@
         <p>Template despues del datalist de colores</p>
 
     </template>
-    <input id="predictiveInput" type="text">
+    <input id="predictiveInput" type="text" list="">
 
 
     <footer>
-
+        <h4>TU?</h4>
     </footer>
     <script>
         const input = document.querySelector('#predictiveInput');
@@ -48,6 +48,7 @@
                     ul.appendChild(li); // agregar el elemento de lista a la lista de colores
                     document.body.appendChild(ul); // agregar la lista de colores al body
                     return li; // retornar el elemento de lista
+                    
                 })
             }
 

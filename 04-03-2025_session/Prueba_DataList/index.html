@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <datalist id="colores">
+        <option value="Rojo"></option>
+        <option value="Azul"></option>
+        <option value="Verde"></option>
+        <option value="Amarillo"></option>
+    </datalist>
+    <template id="template">
+        <p>Template despues del datalist de colores</p>
+
+    </template>
+    <input id="predictiveInput" list="buscar">
+
+
+    <footer>
+
+    </footer>
+    <script>
+        const input = document.querySelector('#predictiveInput');
+        let texto = "";
+        const listToSearch = ['rojo', 'azul', 'verde', 'amarillo'];
+        let listaFiltrada = [];
+
+        //CALLBACK FUNCTION// donde se ejecuta la funcion de filtrado de la lista de colores y se muestra en consola
+        //el resultado de la busqueda de la lista de colores con el texto ingresado en el input de texto.
+        input.addEventListener('input', ({ data }) => { // data es el texto ingresado en el input de texto
+            texto += data || texto - data;  // texto es el texto ingresado en el input de texto
+            //buscar en la lista de colores el texto ingresado en el input de texto
+            listaFiltrada = listToSearch.filter((element, _,arr) => {
+                return element === texto || element.includes(texto);
+                                    //   || element.includes(texto);
+            });
+            //si lo encuentra lo muestra en consola lo agrega en la lista de colores
+            console.log(listaFiltrada);
+            if (listaFiltrada.length > 0) {
+                const ul = document.createElement('ol');// ol es una lista ordenada y ul es una lista desordenada
+                listaFiltrada.forEach((option) => { // recorrer la lista de colores, option es el elemento de la lista
+                    const li = document.createElement('li'); // crear un elemento de lista
+                    li.innerText = option; // llenar el texto de la lista con el texto de la lista de colores
+                    ul.appendChild(li); // agregar el elemento de lista a la lista de colores
+                    document.body.appendChild(ul); // agregar la lista de colores al body
+                    return li; // retornar el elemento de lista
+                    
+                })
+            }
+
+        });
+
+    </script>
+
+</body>
+</html>

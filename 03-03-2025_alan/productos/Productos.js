@@ -16,8 +16,8 @@ document.addEventListener("DOMContentLoaded", function() {
         }
         if(productos.nombre === "" || productos.precio === "" || productos.descripcion === ""){
             alert("Por favor llena todos los campos");
-            return
-            //salida temprana return;
+            return //salida temprana return;
+
         }
 
 

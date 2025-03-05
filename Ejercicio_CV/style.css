@@ -1,8 +1,103 @@
+/*--| Comentarios |--*/
+/*--| Nota |--*/ 
+/*--| Glosoario |--*/
 
-*, body {
-    background-color: bisque;
+
+
+body {
+            /*--| Glosoario: fonmt-family:(en caso que el valor de la propiedad 
+                             principal no este disponible utiliza el siguiente[Helvetica]) |--*/
+    font-family: Arial, Helvetica, sans-serif; /*--| Nota: Toda la pagina utilizara la misma fuente |--*/ 
+
+    margin: 0; /*--| Nota: Elimina los margenes predeterminados del navegador |--*/
+
+    padding: 0; /*--| Nota: Elimina los espacios internos del body |--*/
+    /*
+    /--| Glosoario: PADDING|--/
+    Aplica a los cuatro lados
+        padding: 1em;
+    arriba y abajo | izquierda y derecha 
+        padding: 5% 10%;
+    arriba | izquierda y derecha | abajo 
+        padding: 1em 2em 2em;
+    arriba | derecha | abajo | izquierda 
+        padding: 5px 1em 0 2em;
+    */
+
+    display: flex ; /*--| Nota: la propiedad Display utiliza felxbox para organizar los elementos hijos |--*/
+
+    flex-direction: column; /*--| Nota: organiza llos elemento en una columna |--*/
+
+    align-items: center; /*--| Nota: agrupa los elemento al rededor del centro  |--*/
+
+    justify-content: center; /*--| Nota: permite que los elementos del body este centrados  |--*/ 
+
+    background-color: cadetblue; /*--| El color de fondo sera cadetblue |--*/
+
+    
 }
+header {
+
+    background-color: darkslategray;
+    color: white; /*--| Nota: propiedad que asigna el color y tambien los
+                                decoradores del contenido de los elementos de texto ejem: h1 |--*/ 
+
+    /*--| Glosoario: esta propiedad aliena el texo horizontamente a nivel linea
+                     dentro de un elemento o bloque |--*/
+    text-align: center; /*--| Nota: Propiedad con valor center  |--*/
+
+    padding: 1em; /*--| Nota: el 1em asigna un espacio en el borde, dentro del header |--*/ 
+    width: 100%; /*--| Nota: establece el ancho de un elemento y ocupar completa la plantilla |--*/ 
+
+}
+nav {
+    background-color: darkcyan;
+    padding: 1em;
+    width: 100%;
+    text-align: center;
+    flex-direction: row;
+
+}
+nav a {
+    color: blue;
+}
+::marker {
+    color: white;
+    /*unicode-bidi: isolate;*/
+    font-variant-numeric: tabular-nums;
+    text-transform: none;
+    text-indent: 0px ;
+    text-align: end;
+    text-align-last: right;
+}
+
 h1 {
-    height: 200px;
-    width: 650px;
+
+    width: 100%;
 }
+p {
+    padding: 1em;
+    margin: 1em;
+    
+}
+#morado {
+    color: darkorchid;
+}
+main section {
+    padding: 1em;
+    color: white;
+}
+input {
+    border-style: inset;
+    background-color: var(--color-searchbox-background);
+    border-radius: var(--cr-searchbox-border-radius);
+    color: var(--color-searchbox-foreground);
+    font-size: large;
+    height: 100%;
+    outline: 0;
+    padding-inline-end: calc(var(--cr-searchbox-voice-icon-offset) + var(--cr-searchbox-voice-search-button-width) + var(--cr-searchbox-inner-icon-margin));
+    padding-inline-start: calc(52px + var(--cr-searchbox-thumbnail-icon-offset, 0px));
+    position: static;
+    width: 30%;
+}
+
