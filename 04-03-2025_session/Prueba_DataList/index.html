@@ -18,20 +18,25 @@
 
     </template>
     <input id="predictiveInput" list="buscar">
-
+    <datalist id="lista-color"></datalist>
 
     <footer>
 
     </footer>
     <script>
-        const input = document.querySelector('#predictiveInput');
-        let texto = "";
-        const listToSearch = ['rojo', 'azul', 'verde', 'amarillo'];
-        let listaFiltrada = [];
+        // const input = document.querySelector('#predictiveInput');
+        // let texto = "";
+        // const listToSearch = ['rojo', 'azul', 'verde', 'amarillo'];
+        // let listaFiltrada = [];
+
+
+        /*
 
         //CALLBACK FUNCTION// donde se ejecuta la funcion de filtrado de la lista de colores y se muestra en consola
         //el resultado de la busqueda de la lista de colores con el texto ingresado en el input de texto.
         input.addEventListener('input', ({ data }) => { // data es el texto ingresado en el input de texto
+
+
             texto += data || texto - data;  // texto es el texto ingresado en el input de texto
             //buscar en la lista de colores el texto ingresado en el input de texto
             listaFiltrada = listToSearch.filter((element, _,arr) => {
@@ -53,6 +58,33 @@
             }
 
         });
+
+        */
+        let texto = "";
+        let datalist = document.querySelector('#colores')
+        let option = document.createElement('option')
+
+        option.textContent = texto;
+
+        let input = document.querySelector('#predictiveInput');
+
+        let listToSearch = ['rojo', 'azul', 'verde', 'amarillo'];
+        //let resultadoContent = document.createElement('li')
+        
+
+        
+        input.addEventListener('input', () => {
+
+
+
+        })
+
+        //hola
+
+        document.body.appendChild(datalist)
+        datalist.appendChild(option);
+
+
 
     </script>
 
