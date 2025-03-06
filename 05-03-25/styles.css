@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+}
+
+#titulo{
+    color: blue;
+}
+
+.bolt{
+    font-weight: bold;
+}
+
+
+p{
+    color: aqua;
+}
+
+/*pseudo class*/
+
+p:hover{
+    color: green;
+}
+
+/*pseudo element*/
+p::first-letter{
+    color: blue;    
+    text-transform: uppercase;
+}
+
+
+/*Conbinadores '' > +*/
+section > article >p{
+    color: red;
+}
+
+/*convinador para indicar hijos directos*/
+section p{
+    color: black;
+}
+
+/*" " es para */
+
+
+/*estilos mas comunes que se puedes usar en css*/
+body{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 100;
+    font-size: 5rem;
+    font-style: normal;
+    background-color: blue;
+    background-image: url();
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: aliceblue;
+    color: black;
+}
+
