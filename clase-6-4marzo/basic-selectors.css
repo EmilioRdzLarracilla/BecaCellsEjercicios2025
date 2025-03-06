@@ -1,0 +1,52 @@
+/* selector universal */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* selector de ID */
+#title {
+  color: blue;
+}
+/* selector de clase */
+
+.bold {
+  font-weight: bold;
+}
+/* selectror de tipo */
+p {
+  background: black;
+  color: aqua;
+}
+/* selector de pseudoclase */
+p:hover {
+  /* la pseudoclase nos ayuda a identificar acciones  */
+  color: greenyellow;
+}
+
+/* pseudoelementos */
+/* identfificaicon de pequeñas secciones dentro de una etiqueta */
+
+p::first-letter {
+  color: brown;
+}
+
+/* selectores comnbinadores '' > + */
+section > article > p {
+  color: blueviolet;
+}
+/* selector de hijos */
+section p {
+  color: palevioletred;
+}
+
+/* selector de hermanos +  */
+/* solo al primer hermano del lado derecho funciona */
+h1 + p {
+  background-color: crimson;
+}
+
+div > a {
+  text-decoration: none;
+}
