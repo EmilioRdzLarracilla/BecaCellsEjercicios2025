@@ -36,9 +36,12 @@ body {
   margin: 0;
   padding: 0;
   background-color: var(--magnolia);
+  font-family: "ubuntu";
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .container {
@@ -46,4 +49,56 @@ body {
   width: 940px;
   height: 600px;
   border-radius: 15px;
+  position: relative;
+}
+
+.sidebar {
+  color: var(--white);
+  margin: 1rem;
+  width: 274;
+  height: 568px;
+  background-image: url("/assets/images/bg-sidebar-desktop.svg");
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.sidebar-options {
+  position: absolute;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: left;
+  justify-content: space-between;
+
+  width: 153px;
+  height: 228px;
+  margin-top: 40px;
+  margin-left: 32px;
+}
+
+.sidebar-options-item {
+  display: flex;
+  flex-flow: row nowrap;
+  text-transform: uppercase;
+}
+.oval {
+  border: thin solid var(--white);
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+.step-text {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--light-blue);
+}
+
+.options-text {
+  font-size: 14px;
+  font-weight: bold;
 }
