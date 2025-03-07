@@ -1,0 +1,33 @@
+*{
+    background-color: black;
+}
+
+#a{
+    width: 100px;
+    height: 100px;
+    color: aliceblue;
+    background-color: aqua;
+    border-radius: 50%;
+    border-style:dashed;
+}
+
+#b{
+    width: 100px;
+    height: 100px;
+    color: wheat;
+    background-color:blue ;
+    margin: 20px;
+    box-sizing: border-box;
+    border-left: 2px solid aqua;
+    
+}
+
+
+span{
+    color: aliceblue;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    display: block;
+}
+

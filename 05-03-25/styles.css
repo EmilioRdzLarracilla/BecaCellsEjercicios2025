@@ -55,3 +55,32 @@ body{
     color: black;
 }
 
+p{
+    /*inherit || inicial || header*/
+    font-size: unset;
+}
+
+p{
+    /*tener informacion como si fuera un word*/
+    text-align: center;
+}
+
+p{/*son valores para  poner la letra con gruesa o delgada*/
+    font-weight: 100;
+}
+
+p{
+    line-height: 5px;
+}
+
+
+#a{
+    width: 100px;
+    height: 100px;
+
+}
+
+#b{
+    width: 100px;
+    height: 100px;
+}
