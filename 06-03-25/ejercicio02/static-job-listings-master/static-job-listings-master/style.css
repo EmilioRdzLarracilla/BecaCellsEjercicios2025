@@ -1,0 +1,139 @@
+/*# Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+> 💡 These are just the design sizes. Ensure content is responsive and meets WCAG requirements by testing the full range of screen sizes from 320px to large screens.
+
+## Colors
+
+### Primary
+
+- Desaturated Dark Cyan: hsl(180, 29%, 50%)
+
+### Neutral
+
+- Light Grayish Cyan (Background): hsl(180, 52%, 96%)
+- Light Grayish Cyan (Filter Tablets): hsl(180, 31%, 95%)
+- Dark Grayish Cyan: hsl(180, 8%, 52%)
+- Very Dark Grayish Cyan: hsl(180, 14%, 20%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 15px
+
+### Headings
+
+*/
+*{
+     font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.tarjeta{
+    display: flex;
+    width: 90%;
+    height: 250px;
+    box-shadow: 1px 2px 10px black;
+    margin-top: 30px;
+    margin-left: 80px;
+    
+}
+
+#border-left,
+#border-left2{
+    border-left: 10px solid hsl(180, 29%, 50%);
+}
+
+
+.caja1{
+    display: inline-block;
+    width: 600px;
+    height: 250px;
+    
+}
+
+.caja2{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    padding: 20px;
+}
+
+.img{
+    margin-top: 26px;
+    margin-left: 20px;
+}
+
+.cab{
+    display: flex;
+    width: 100px;
+    padding-top: 60px;
+
+}
+
+span{
+    padding-inline: 20px;
+}
+
+.uno{
+    color: hsl(180, 29%, 50%);
+}
+
+.dos{
+    width:auto;
+    height: 20px;
+    line-height: 21px;
+    border-radius: 15px;
+    background-color:  hsl(180, 29%, 50%);
+    color: white;
+}
+
+
+.trees{
+    width:auto;
+    height: 20px;
+    line-height: 21px;
+    border-radius: 15px;
+    margin-left: 10px;
+    background-color: black;
+    color: white;
+}
+
+.cab2{
+    display:flex;
+    width: 100px;
+    padding: 100px;
+    
+}
+
+.info1{
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px; 
+    font-size: 16px;
+    text-align: center;
+    color: hsl(180, 29%, 50%);
+    background-color: #f3f3f3;
+    margin: 20px;
+}
+
+.puesto{
+    padding-left: 20px;
+}
+
+.dot{
+    color: grey;
+    font-size: 20px;
+}
+.punto{
+    font-size: 40px;
+}
+
+

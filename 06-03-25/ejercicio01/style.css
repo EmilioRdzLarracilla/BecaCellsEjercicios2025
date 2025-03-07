@@ -1,0 +1,14 @@
+*{
+   background-color: black;
+}
+
+/*id de la caja*/
+#caja {
+    width: 250px;
+    height: 250px;
+    background-color: white;
+    border-right: 2px solid aqua;
+    border-left: 2px dashed aqua;
+    border-top: 10px double aqua;
+    border-bottom: 3px dotted aqua; 
+}
