@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles/main.css" />
+    <title>Frontend Mentor | Multi-step form</title>
+  </head>
+  <body>
+    <section class="page">
+      <article class="container">
+        <article class="sidebar">
+          <section class="sidebar-options">
+            <div class="sidebar-options-item">
+              <div class="oval">1</div>
+              <div class="sidebar-text">
+                <p class="step-text">step 1</p>
+                <p class="options-text">tour info</p>
+              </div>
+            </div>
+            <div class="sidebar-options-item">
+              <div class="oval">2</div>
+              <div class="sidebar-text">
+                <p class="step-text">step 2</p>
+                <p class="options-text">select plan</p>
+              </div>
+            </div>
+            <div class="sidebar-options-item">
+              <div class="oval">3</div>
+              <div class="sidebar-text">
+                <p class="step-text">step 3</p>
+                <p class="options-text">add-ons</p>
+              </div>
+            </div>
+            <div class="sidebar-options-item">
+              <div class="oval">4</div>
+              <div class="sidebar-text">
+                <p class="step-text">step 4</p>
+                <p class="options-text">summary</p>
+              </div>
+            </div>
+          </section>
+        </article>
+        <div class="content-info">
+          <section class="personal-info">
+            <article class="personal-info-text">
+              <h2 class="title">Personal Info</h2>
+              <p class="description-text">
+                Please provide your name, email address, and phone number.
+              </p>
+            </article>
+
+            <form class="personal-info-form">
+              <div class="form-input">
+                <label for="">name</label>
+                <input type="text" placeholder="e.g. Stephen King" required />
+              </div>
+              <div class="form-input">
+                <label for="">email adress</label>
+                <input
+                  type="text"
+                  required
+                  placeholder="e.g. stephenking@lorem.com"
+                />
+              </div>
+              <div class="form-input">
+                <label for="">phone number</label>
+                <input type="text" placeholder="e.g. +1 234 567 890" required />
+              </div>
+              <button type="submit">next step</button>
+            </form>
+          </section>
+        </div>
+      </article>
+    </section>
+
+    <section class="page">
+      <article class="container">
+        <section class="sidebar">
+          <section class="sidebar-options">
+            <div class="sidebar-options-item">
+              <div class="oval">1</div>
+              <div class="sidebar-text">
+                <p class="step-text">step 1</p>
+                <p class="options-text">tour info</p>
+              </div>
+            </div>
+            <div class="sidebar-options-item">
+              <div class="oval">2</div>
+              <div class="sidebar-text">
+                <p class="step-text">step 2</p>
+                <p class="options-text">select plan</p>
+              </div>
+            </div>
+            <div class="sidebar-options-item">
+              <div class="oval">3</div>
+              <div class="sidebar-text">
+                <p class="step-text">step 3</p>
+                <p class="options-text">add-ons</p>
+              </div>
+            </div>
+            <div class="sidebar-options-item">
+              <div class="oval">4</div>
+              <div class="sidebar-text">
+                <p class="step-text">step 4</p>
+                <p class="options-text">summary</p>
+              </div>
+            </div>
+          </section>
+        </section>
+        <div class="content-info">
+          <section class="select-plan">
+            <article class="select-plan-text">
+              <h2 class="title">Select your plan</h2>
+              <p class="description-text">
+                You have the option of monthly or yearly billing.
+              </p>
+            </article>
+            <article class="select-plan-cars">
+              <div class="select-plan-card">
+                <img src="assets/images/icon-pro.svg" alt="arcade" />
+                <div class="select-plan-card-description">
+                  <p class="select-card-name-text">Arcade</p>
+                  <p class="select-card-price-text">$9/mo</p>
+                </div>
+              </div>
+              <div class="select-plan-card">
+                <img src="assets/images/icon-advanced.svg" alt="arcade" />
+                <div class="select-plan-card-description">
+                  <p class="select-card-name-text">Arcade</p>
+                  <p class="select-card-price-text">$9/mo</p>
+                </div>
+              </div>
+              <div class="select-plan-card">
+                <img src="assets/images/icon-arcade.svg" alt="arcade" />
+                <div class="select-plan-card-description">
+                  <p class="select-card-name-text">Arcade</p>
+                  <p class="select-card-price-text">$9/mo</p>
+                </div>
+              </div>
+            </article>
+            <article class="select-plan-toggle">
+              <p>Monthly</p>
+              <label class="switch">
+                <input type="checkbox" />
+                <span class="slider round"></span>
+              </label>
+              <p>Yearly</p>
+            </article>
+
+            <article class="stepbar">
+              <button class="prev-btn">go back</button
+              ><button class="next-btn">next step</button>
+            </article>
+          </section>
+        </div>
+      </article>
+    </section>
+    <section class="page">
+      <article class="container">
+        <article class="sidebar">
+          <section class="sidebar-options">
+            <div class="sidebar-options-item">
+              <div class="oval">1</div>
+              <div class="sidebar-text">
+                <p class="step-text">step 1</p>
+                <p class="options-text">tour info</p>
+              </div>
+            </div>
+            <div class="sidebar-options-item">
+              <div class="oval">2</div>
+              <div class="sidebar-text">
+                <p class="step-text">step 2</p>
+                <p class="options-text">select plan</p>
+              </div>
+            </div>
+            <div class="sidebar-options-item">
+              <div class="oval">3</div>
+              <div class="sidebar-text">
+                <p class="step-text">step 3</p>
+                <p class="options-text">add-ons</p>
+              </div>
+            </div>
+            <div class="sidebar-options-item">
+              <div class="oval">4</div>
+              <div class="sidebar-text">
+                <p class="step-text">step 4</p>
+                <p class="options-text">summary</p>
+              </div>
+            </div>
+          </section>
+        </article>
+        <div class="content-info">
+          <section class="pick-adds-on">
+            <article class="pick-adds-text">
+              <h2 class="title">Pick adds on</h2>
+              <p class="description-text">
+                Add-ons help enhance your gaming experience.
+              </p>
+            </article>
+
+            <form class="form-picks-adds-on">
+              <div class="form-pick-adds-option">
+                <input
+                  id="online-service"
+                  type="checkbox"
+                  class="form-pick-adds-checkbox"
+                />
+                <div>
+                  <label class="text-blue" for="online-service"
+                    >Online service</label
+                  >
+                  <p class="text-gray">Access to multiplayer games</p>
+                </div>
+                <p class="pick-adds-price">+1/mo</p>
+              </div>
+              <div class="form-pick-adds-option">
+                <input
+                  id="larger-storage"
+                  type="checkbox"
+                  class="form-pick-adds-checkbox"
+                />
+                <div>
+                  <label class="text-blue" for="larger-storage"
+                    >Larger storage</label
+                  >
+                  <p class="text-gray">Access to multiplayer games</p>
+                </div>
+                <p class="pick-adds-price">+1/mo</p>
+              </div>
+              <div class="form-pick-adds-option">
+                <input
+                  id="customizable-profile"
+                  type="checkbox"
+                  class="form-pick-adds-checkbox"
+                />
+                <div>
+                  <label class="text-blue" for="customizable-profile"
+                    >Customizable profile</label
+                  >
+                  <p class="text-gray">Access to multiplayer games</p>
+                </div>
+                <p class="pick-adds-price">+2/mo</p>
+              </div>
+            </form>
+            <article class="stepbar">
+              <button class="prev-btn">go back</button
+              ><button class="next-btn">next step</button>
+            </article>
+          </section>
+        </div>
+      </article>
+    </section>
+
+    <section class="page">
+      <article class="container">
+        <section class="sidebar">
+          <section class="sidebar-options">
+            <div class="sidebar-options-item">
+              <div class="oval">1</div>
+              <div class="sidebar-text">
+                <p class="step-text">step 1</p>
+                <p class="options-text">tour info</p>
+              </div>
+            </div>
+            <div class="sidebar-options-item">
+              <div class="oval">2</div>
+              <div class="sidebar-text">
+                <p class="step-text">step 2</p>
+                <p class="options-text">select plan</p>
+              </div>
+            </div>
+            <div class="sidebar-options-item">
+              <div class="oval">3</div>
+              <div class="sidebar-text">
+                <p class="step-text">step 3</p>
+                <p class="options-text">add-ons</p>
+              </div>
+            </div>
+            <div class="sidebar-options-item">
+              <div class="oval">4</div>
+              <div class="sidebar-text">
+                <p class="step-text">step 4</p>
+                <p class="options-text">summary</p>
+              </div>
+            </div>
+          </section>
+        </section>
+        <div class="content-info">
+          <section class="finish-up">
+            <article class="finish-up-text">
+              <h2 class="title">Finish Up</h2>
+              <p class="description-text">
+                Double-check everything looks OK before confirming.
+              </p>
+            </article>
+            <article class="finish-up-summary">
+              <div class="finish-up-plan">
+                <div>
+                  <p>Arcade (Monthly)</p>
+                  <p><a href="#">Change</a></p>
+                </div>
+                <div>$9/mo</div>
+              </div>
+              <hr />
+              <div class="finish-up-adds">
+                <div class="finish-up-adds-item">
+                  <p>Online service</p>
+                  <p>+1/mo</p>
+                </div>
+                <div class="finish-up-adds-item">
+                  <p>Largest Storage</p>
+                  <p>+2/mo</p>
+                </div>
+              </div>
+            </article>
+            <article class="finish-up-total">
+              <p>Online service</p>
+              <p>+1/mo</p>
+            </article>
+            <article class="stepbar">
+              <button class="prev-btn">go back</button
+              ><button class="next-btn confirm">confirm</button>
+            </article>
+          </section>
+        </div>
+      </article>
+    </section>
+  </body>
+</html>
