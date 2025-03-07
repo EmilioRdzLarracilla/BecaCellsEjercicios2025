@@ -31,13 +31,10 @@ body {
   background-color: rgba(211, 211, 211, 0.3);
   margin: 0 auto;
   max-width: 768px;
-  min-width: 375px;
+  min-width: 390px;
   height: auto;
   text-align: center;
   padding: 32px 16px;
-  display: grid;
-  grid-auto-columns: auto;
-  gap: 2rem;
 }
 
 .box {
@@ -209,4 +206,166 @@ body {
 }
 .faster > img {
   width: 179px;
+}
+
+.create {
+  text-align: start;
+  padding: 32px;
+  background-color: var(--yellow-100);
+}
+
+.create > img {
+  margin-top: 24px;
+  width: 190px;
+}
+
+.create > h2 {
+  font-size: 32px;
+  line-height: 28px;
+  letter-spacing: -0.1rem;
+  font-weight: 500;
+}
+.create > h2 > i {
+  color: var(--purple-500);
+  font-size: inherit;
+}
+
+.write {
+  padding: 24px;
+  background-color: var(--yellow-500);
+  text-align: start;
+}
+
+.write > img {
+  margin-top: 24px;
+  width: 204px;
+}
+
+.write > h2 {
+  font-size: 32px;
+  line-height: 28px;
+  letter-spacing: -0.1rem;
+  font-weight: 500;
+}
+
+/* media quereis para tamaño de pantalla */
+
+@media (375px<= width <= 768px) {
+  .container {
+    display: grid;
+    grid-auto-columns: auto;
+    gap: 32px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .social-media {
+    grid-area: social;
+  }
+
+  .manage {
+    grid-area: manage;
+    display: flex;
+    flex-flow: row nowrap;
+    column-gap: 32px;
+  }
+
+  .schedule {
+    grid-area: schedule;
+  }
+  .grow {
+    grid-area: grow;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+  }
+
+  .faster {
+    grid-area: faster;
+    display: flex;
+    flex-flow: row nowrap;
+  }
+
+  .create {
+    grid-area: create;
+  }
+
+  .write {
+    grid-area: write;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 32px;
+    grid-template-areas:
+      "social social"
+      "manage manage"
+      "schedule schedule"
+      " grow grow"
+      " faster faster"
+      " create write";
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    height: 100vh;
+  }
+  .social-media {
+    grid-area: social;
+  }
+
+  .manage {
+    grid-area: manage;
+    display: flex;
+    flex-flow: row nowrap;
+    column-gap: 32px;
+  }
+
+  .schedule {
+    position: relative;
+    grid-area: schedule;
+    overflow-x: hidden;
+  }
+  .schedule > img {
+    position: absolute;
+    top: 6rem;
+    left: 3rem;
+  }
+  .grow {
+    grid-area: grow;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+  }
+
+  .faster {
+    grid-area: faster;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+  }
+
+  .create {
+    grid-area: create;
+  }
+
+  .write {
+    grid-area: write;
+  }
+  .container {
+    min-width: 1024;
+    max-width: 1440px;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    gap: 32px;
+    grid-template-areas:
+      "create social social schedule"
+      "create manage manage schedule"
+      "write manage manage schedule"
+      "write faster grow grow ";
+  }
 }
