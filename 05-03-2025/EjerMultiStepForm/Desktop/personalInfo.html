@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MultiStepForm</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>  
+    <main>
+        <h1 class="info">Personal info</h1>
+        <p class="info">Please provide your name, email address, and phone number</p>
+        <form action="script.js" method="post">
+            <label for="name">Name</label><br>
+            <input id="name" name="name" type="text" required placeholder="e.g. Stephen King">
+            <br>
+            <label for="email">Email Address</label><br>
+            <input id="email" name="email" type="text" required placeholder="e.g. stephenking@lorem.com">
+            <br>
+            <label for="phone">Phone Number</label><br>
+            <input id="phone" name="phone" type="tel" required placeholder="e.g. +1 234 567 890">
+            <br>
+            <button type="submit">Next Step</button>
+        </form>
+    </main>
+    <aside class="sidebar">
+        <ul class="steps">
+            <div class="circle">1</div>
+            <div class="step-text">
+                <span class="step-title">STEP 1</span>
+                <span class="ste-subtitle">YOUR INFO</span>
+            </div>
+            <div class="circle">2</div>
+            <div class="step-text">
+                <span class="step-title">STEP 2</span>
+                <span class="ste-subtitle">SELECT PLAN</span>
+            </div>
+            <div class="circle">3</div>
+            <div class="step-text">
+                <span class="step-title">STEP 3</span>
+                <span class="ste-subtitle">ADD-ONS</span>
+            </div>
+            <div class="circle">4</div>
+            <div class="step-text">
+                <span class="step-title">STEP 4</span>
+                <span class="ste-subtitle">SUMMARY</span>
+            </div>
+        </ul>
+    </aside>
+    <script src="script.js"></script>
+</body>
+</html>

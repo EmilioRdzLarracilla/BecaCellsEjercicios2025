@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CV web page</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+                <img src="https://cdn-icons-png.flaticon.com/512/8347/8347432.png" alt="cv document">
+        </header>
+
+        <main>
+            <h1>Sign in to CVweb</h1>
+            <form id="forms" action="script.js" method="POST">
+                <p>Username or email adress</p>
+                <label for="username"></label>
+                <input id="username" name="username" type="text" required>
+                <a href="https://i.pinimg.com/236x/54/e9/22/54e922b79aae94860f73298b728eb3e8.jpg" target="_blank">
+                    Forgot password?</a>
+                <p>Password</p>
+                <label for="password"></label>
+                <input id="password" name="password" type="password" required><br><br>
+                <button type="submit">Sign in</button>
+            </form>
+            <dialog id="dialog">
+                <p>User or pass are incorrect</p>
+                <button onclick="document.getElementById('dialog').close()">Cerrar</button>
+            </dialog>
+        </main>
+        <footer>
+            <p><i>Copyright by Saúl Rodríguez March, 2025</i></p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>

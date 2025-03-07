@@ -1,0 +1,30 @@
+html {
+    font-style: 20px; /*unidad de medida absoluta*/
+}
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-style: italic;
+    font-size: 20px; /*unidad de medida absoluta*/
+    font-size: 1 rem; /*unidad relativa */
+
+
+    background-color: red;
+    background-color: rgba(125,126,127);
+    background-image: url();
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    color: #ffffff;
+    color: rgba(255,255,255)
+
+}
+
+article {
+    font-size: 100px;
+}
+
+p{
+    font-size: 1em; /**/
+}

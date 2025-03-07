@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTML forms</title>
+        <link rel="stylesheet" href="styles.css">
+        <style>
+            /*
+                #id, p, .class {}
+            */
+        </style>
+    </head>
+    <body>
+        <form action="localHOST:3000/users" method="POST"> <!--atributo action es una url de a donde se va a ser request con los toda l ainformacion de la etiqueta form, method por defecto es un GET-->
+            <label for="nombre">Nombre</label> <!--referencia la etiqueta de input-->
+            <input id="nombre" name="nombre" type="text" required 
+                    placeholder="nombre completo"> <!--campo de entrada, id identificar, required (campos obligatorios) placeholder(atributo para darle mas informacion al usuario)-->
+            <br>
+            <label for="pass">Contrasena</label> <!--referencia la etiqueta de input-->
+            <input id="pass" name="pass" type="text" required 
+                    placeholder="contrasena"> <!--campo de entrada, id identificar, required (campos obligatorios) placeholder(atributo para darle mas informacion al usuario)-->
+            <br>
+            <label for="accept">Aceptar Terminos y condiciones</label> <!--referencia la etiqueta de input-->
+            <input id="accept" name="accept" type="checkbox"> <!--campo de entrada, id identificar -->
+            <br>
+            <label for="option">Selecciona una de las dos opciones</label> <!--referencia la etiqueta de input-->
+            <input id="option1" name="option" type="radio"> A
+            <input id="option2" name="option" type="radio"> B<!--campo de entrada, id identificar, radio se utiliza cuando -->
+            <br>
+            <select name="options" id="options"></select> <!--selecciona una opcion-->
+                <option selected value="selecciona pais"></option>
+                <option value="Mexico">Mexico</option>
+                <option value="Brazil"> <b>Brazil</b></option>
+                <option value="Paraguay">Paraguay</option>
+            </select>
+            <textarea  name="" id=""></textarea> <!--escribir un texto mas grande, disable, maxlenght, minlength-->
+            <input type="button" value="CLICK ME">
+
+            <!--<input type="button"-value="CLICK ME">-->
+            <button>CLICK ME</button>
+
+            <fieldset> <!--permite agrupar elementos dentro de un formulario-->
+                <legend>Informacion Personal</legend> <!--descripcion del fieldset-->
+                <label for="edad">Edad</label> <!--referencia la etiqueta de input-->
+                <input id="edad" name="edad" type="number" required> <!--campo de entrada, id identificar, required (campos obligatorios) placeholder(atributo para darle mas informacion al usuario)-->
+                <br>
+                <label for="nombre">Nombre</label> <!--referencia la etiqueta de input-->
+                <input id="nombre" name="nombre" type="text" required 
+                        placeholder="nombre completo"> <!--campo de entrada, id identificar, required (campos obligatorios) placeholder(atributo para darle mas informacion al usuario)-->
+                <label for="direccion">Direccion</label> <!--referencia la etiqueta de input-->
+                <input id="nombre" name="direccion" type="text" required 
+                        placeholder="direccion completa"> <!--campo de entrada, id identificar, required (campos obligatorios) placeholder(atributo para darle mas informacion al usuario)-->
+                <br>
+                <label for="color">Color</label> <!--referencia la etiqueta de input-->
+                <input id="color" name="color" type="color"> <!--campo de entrada, id identificar, required (campos obligatorios) placeholder(atributo para darle mas informacion al usuario)-->
+                <br>
+            </fieldset>
+        </form>
+        <br>
+
+        <!--MULTIMEDIA-->
+        <h2>MULTIMEDIA</h2>
+        <br>
+        <video controls height="600" width="800" src=""> <!--o bien source src-->
+            <source src="">
+        </video>
+        <br>
+        <audio autoplay controls  src=""> <!--o bien source src-->
+            <source src="">
+        </audio>
+
+        <iframe src="" frameborder="0"></iframe> <!--es un navegador pequeño, permite poner una pagina web dentro de otra, peor representa un riesgo de seguridad-->
+
+
+        <!--comentario-->
+        <form action="">
+            <label for=""></label>
+            <input type="text">
+            <button></button>
+        </form>
+
+        <!--etiquetas semanticas-->
+        <main> <!--solo debe haber un main-->
+            <header>
+                <article>1</article> <!--si puede haber mas de un articulo en el documento-->
+                <article>2</article>
+                <article>3</article>
+                <article>4</article>
+                <article>5</article>
+                <article>6</article>
+                <article>7</article>
+                <article>8</article>
+                <article>
+                    <section>
+                        <!--para agrupar contenidos-->
+                    </section>
+                </article>
+                <h1></h1>
+            </header>
+
+            <canvas>
+                <!--ayuda a realizar cosas en 2D-->
+            </canvas>
+            <details>
+                <!--muestra u oculta informacion-->
+                <summary>detalles adicinales</summary>
+                <p>esto se debe mostrar al darle click a la etiqueta</p>
+            </details>
+
+            <datalist>
+                
+            </datalist>
+
+            <dialog id="myDialog">
+                <p>Esto es un cuadro de dialogo</p>
+                <button>cerrar</button>
+
+            </dialog>
+            <footer>
+                <nav> <!--barra de navegacion-->
+                    <ul>
+                        <li>Acerca de nosotros</li>
+                        <li>Acerca de nosotros</li>
+                        <li>Acerca de nosotros</li>
+                    </ul>
+                </nav>
+            </footer>
+        </main>
+
+    </body>
+</html>
