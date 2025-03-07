@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <main class="contenedor">
+        <aside class="barra_lateral">
+            <nav>
+                <p class="pasos">1. Tu informacion</p>
+                <p class="pasos">2. Selecciona tu plan</p>
+                <p class="pasos">3. Añadir a tu plan</p>
+                <p class="pasos">4. Resumen del plan</p>
+            </nav>
+        </aside>
+
+        <section class="formulario">
+            <form id="pasosFormulario">
+                <fieldset class="step active">
+                    <legend>Informacion Personal</legend>
+                    <p>Ingresa tu nombre, correo electronico y tu telefono celular</p>
+                    <input type="text" id="nombre" placeholder="Nombre" required>
+                    <input type="email" id="correo" placeholder="Correo Electronico" required>
+                    <input type="number" id="telefono" placeholder="Telefono Celular" required>
+                    <button type="button" onclick="siguientePaso()">Siguiente Paso</button>
+                </fieldset>
+
+                <fieldset class="step">
+                    <legend>Selecciona tu plan</legend>
+                    <p>Escoja uno de nuestros planes para usted</p>
+                    <label><input type="radio" name="plan" value="Basico" required> Basico</label>
+                    <label><input type="radio" name="plan" value="Intermedio" required> Intermedio</label>
+                    <label><input type="radio" name="plan" value="Avanzado" required> Avanzado</label>
+                    <button type="button" onclick="pasoAnterior()">Regresar</button>
+                    <button type="button" onclick="siguientePaso()">Siguiente Paso</button>
+                </fieldset>
+
+                <fieldset class="step">
+                    <legend>Agregar complementos</legend>
+                    <p>Agregue algo adicional a su plan</p>
+                    <label><input type="checkbox" name="complemento" value="Soporte 24/7">Soporte 24/7</label>
+                    <label><input type="checkbox" name="complemento" value="Acceso Premium">Acceso Premium</label>
+                    <label><input type="checkbox" name="complemento" value="Descuentos Especiales">Descuentos Especiales</label>
+                    <button type="button" onclick="pasoAnterior()">Regresar</button>
+                    <button type="button" onclick="siguientePaso()">Siguiente Paso</button>
+                </fieldset>
+
+                <fieldset class="step">
+                    <legend>Resumen</legend>
+                    <p><strong>Nombre: </strong><span id="resumen-nombre"></span></p>
+                    <p><strong>Correo: </strong><span id="resumen-correo"></span></p>
+                    <p><strong>Telefono: </strong><span id="resumen-telefono"></span></p>
+                    <p><strong>Plan Seleccionado: </strong><span id="resumen-plan"></span></p>
+                    <p><strong>Complementos: </strong><span id="resumen-complementos"></span></p>
+                    <button type="button" onclick="pasoAnterior()">Regresar</button>
+                    <button type="submit">Confirmar</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <script src="./script.js"></script>
+</body>
+</html>

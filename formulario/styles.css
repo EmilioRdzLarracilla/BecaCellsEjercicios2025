@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+}
+
+.contenedor {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+/* Estilos de la barra lateral */
+
+.barra_lateral {
+    width: 20%;
+    background: #2c3e50;
+    color: white;
+    padding: 20px;
+}
+
+.pasos {
+    margin-bottom: 15px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.formulario {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    width: 50%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background: white;
+}
+
+fieldset {
+    display: none;
+    flex-direction: column;
+}
+
+fieldset.active {
+    display: flex;
+}
+
+input, label {
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
