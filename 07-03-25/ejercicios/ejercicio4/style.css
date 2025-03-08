@@ -1,0 +1,59 @@
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 350px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    gap: 5px;
+}
+
+header, footer {
+    height: 50px;
+    border-radius: 10px;
+}
+
+#encabezado {
+    background-color: gray;
+}
+
+#principal {
+    display: flex;
+    flex: 1;
+    gap: 5px;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100px;
+}
+
+.caja {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+}
+
+.caja-azul {
+    background-color: #5d88c8;
+}
+
+.caja-roja {
+    background-color: #f08a8a;
+    height: 80px;
+}
+
+#contenido {
+    flex: 1;
+    background-color: #f1c40f;
+    border-radius: 10px;
+}
+
+#pie {
+    background-color: #bca5d1;
+    height: 109px;
+    border-radius: 10px;
+}
