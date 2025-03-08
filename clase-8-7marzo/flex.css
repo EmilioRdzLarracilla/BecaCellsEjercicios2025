@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-around;
+  flex-flow: column nowrap;
+  background-color: grey;
+  border: thin solid black;
+  width: 100%;
+  height: 100vh;
+}
+
+.item {
+  background-color: aqua;
+  border: thin solid black;
+  height: 20vh;
+}
+
+.circle {
+  background-color: crimson;
+  border-radius: 50%;
+  width: 20%;
+  height: 20%;
+}
+
+.contenedor {
+  margin: 0 auto;
+  margin-top: 5rem;
+  width: 60vw;
+  height: 60vw;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 2rem;
+}
