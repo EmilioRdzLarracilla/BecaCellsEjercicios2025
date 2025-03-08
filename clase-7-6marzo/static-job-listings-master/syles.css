@@ -1,0 +1,44 @@
+:root {
+  --desaturade-dark-cian: rgb(91, 164, 164);
+  --light-grayish-cian: rgb(238, 246, 246);
+  --dark-grayish-cian: rgb(123, 142, 142);
+  --very-dark-grayish-cian: hsl(180, 14%, 20%);
+  --medium-font-weight: 500;
+  --bold-font-weight: 500;
+}
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 15px;
+}
+body {
+  font-size: inherit;
+}
+.container {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.card-job {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.languages {
+  width: 50%;
+  display: flex;
+  flex-flow: row nowrap;
+  column-gap: 2rem;
+  align-items: center;
+  cursor: pointer;
+}
