@@ -1,0 +1,58 @@
+div{
+    width: 350px;
+    height: 500px;
+    background-color: #18273F;
+}
+
+
+h3{
+    margin-left: 40px;
+    color: white;
+}
+
+#imginfo{
+    margin: 15px;
+    margin-left: 40px;
+    color: grey;   
+}
+
+
+section{
+display: flex;
+}
+span{
+    color: rgb(29, 217, 230);
+   margin: 20px;
+}
+
+#info{
+    color: gray;
+    margin-left: 100px;
+}
+article{
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+#img2{
+    width: 20px;
+    height: 20px;
+    margin-left: 60px;
+    border-radius: 30px;
+}
+
+#imginfo1 {
+    color: gray;
+    margin-left: 15px;
+    position: relative;
+    top: -16px;
+}
+
+#img1{
+    border-radius: 30px;
+}
+
+figure{
+    padding-top: 15px;
+}

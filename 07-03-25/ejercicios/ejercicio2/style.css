@@ -1,0 +1,53 @@
+
+#container{
+    display: flex;
+    width: 50%;
+    height: 350px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.146);
+}
+section{
+ width: auto;
+ 
+
+}
+
+h3{
+font-size: 35px;
+}
+
+
+article{
+    display: flex;
+   
+}
+#info{
+    display: flex;
+}
+
+#info2{
+    margin: 10px;
+}
+span{
+    color: darkgray;
+    font-size: 15px;
+}
+
+#img2{
+    width: 65px;
+    height: 60px;
+    margin-left: 15px;
+    border-radius: 30px;
+}
+#info3 i{
+    width: 25px;
+    height: 25px;
+    margin-left: 245px;
+    text-align: center;
+    align-items: center;
+    border-radius: 15px;
+    background-color: gainsboro;
+}
+
+
+
+

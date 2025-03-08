@@ -1,0 +1,56 @@
+
+
+.container{
+    display: flex;
+    width: 60%;
+    height: auto; 
+}
+
+article{
+        width: 30%;
+        height: 500px;
+}
+
+#naranja{
+    background-color:#E08630;
+}
+
+#verde{
+    background-color: #106872;
+}
+
+#verdefu{
+    background-color: #064041;
+}
+
+h2{
+  font-size: 50px;  
+  margin-left: 25px;
+  color: white;
+}
+
+p{
+    font-size: 20px;
+    text-align:left;
+    margin-left: 25px;
+    margin-right: 50px;
+    color: white;
+}
+
+
+.boton{
+    background-color: white;
+    border-radius: 20px;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    margin-top: 100px;
+    margin-left: 70px;
+    line-height: 50px;
+}
+
+
+.boton:hover{
+    background-color: darkgray;
+}
+
