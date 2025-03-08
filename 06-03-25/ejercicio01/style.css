@@ -11,4 +11,7 @@
     border-left: 2px dashed aqua;
     border-top: 10px double aqua;
     border-bottom: 3px dotted aqua; 
+    color: black;
+    text-align: center;
+    line-height: 250px;
 }
