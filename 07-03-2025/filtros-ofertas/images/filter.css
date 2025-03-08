@@ -14,6 +14,17 @@
     --fontFamily-: Spartan;
 
 }
+
+.header-content {
+    display: flex;
+    background-color: var(--DesaturatedDarkCyan-);
+    margin-bottom: 30px;
+    position: relative;
+    top: -20px;
+    left: -8px;
+
+}
+
 body {
 
     background-color: var(--clrLigthGray-);
