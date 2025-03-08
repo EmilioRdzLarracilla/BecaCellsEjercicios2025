@@ -1,11 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FORMULARIO POR PASOS </title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <!--UTILIZAR CSS Y JS-->
+    <header>
+
+        <nav>
+            <ul>
+                <li><a href="./multi-step-form.html">Tu informacion</a></li>
+                <li><a href="./layout/plan-form.html">Selecciona tu Plan</a></li>
+                <li><a href="./layout/complement-form.html">Complementos</a></li>
+                <li><a href="./layout/summary-deatils.html">Resumen</a></li>
+            </ul>
+        </nav>
+
+         <form id="form-datos" class="formulario">
+            <h1>Informacion Personal</h1>
+            <div>
+                
+                <p>Necesitamos tus datos para la soulicitud:
+                    <span style="color: dodgerblue;"> Nompre, Correo, Telefono, </span>
+                </p>
+            </div>     
+            <label for="input-nombre">Escribe tu nombre:</label>
+            <input id="input-nombre" class="inputNombre" type="text" placeholder="Tu nombre:">
+            <label for="input-correo">Escribe tu correo</label>
+            <input id="input-correo" class="inputNombre" type="text" placeholder="Tu correo:">
+            <label for="input-telefono">Escribe tu numero</label>
+            <input id="input-telefono" class="inputNombre" type="number" placeholder="Tu numero:">
+            <button id="button-info" type="submit">Siguiente paso</button>
+            </form>
+            <script src="Formulario.js"></script>
+
+
+    </header>
+
+
+
+
+
+
 </body>
+
 </html>
