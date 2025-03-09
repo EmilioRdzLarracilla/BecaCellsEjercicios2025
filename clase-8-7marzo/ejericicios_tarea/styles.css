@@ -40,7 +40,7 @@ main {
   background-color: var(--Very-dark-blue-main-BG);
 }
 .dos {
-  background-color: beige;
+  background-color: rgba(225, 214, 214, 0.7);
 }
 
 .card {
@@ -124,4 +124,183 @@ footer > img {
 .footer-white:active {
   color: var(--Cyan);
   cursor: pointer;
+}
+
+/*  estilos cards */
+
+.cards-3 {
+  border-radius: 1rem;
+  width: 1024px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+}
+.cards-3-item {
+  color: white;
+  width: 375px;
+  padding: 2.5rem;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: start;
+  justify-content: center;
+  gap: 2rem;
+}
+.cards-3-item h2 {
+  text-transform: uppercase;
+}
+.cards-3-item p {
+  letter-spacing: 0.1rem;
+  line-height: 1.5rem;
+  text-align: justify;
+}
+
+.cards-3-item button {
+  margin-top: 1rem;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  width: 100px;
+  border-style: none;
+  font-weight: bold;
+}
+.card-1 {
+  border-radius: 1rem 0 0 1rem;
+  background-color: #ed5107;
+}
+.card-1 > button {
+  color: #ed5107;
+}
+
+.card-2 {
+  background-color: #2d6e7e;
+}
+.card-2 > button {
+  color: #2d6e7e;
+}
+.card-3 {
+  border-radius: 0 1rem 1rem 0;
+  background-color: #02383c;
+}
+.card-1 > button {
+  color: #ed5107;
+}
+
+/* layout */
+
+.tres {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.tres > footer,
+.tres > header {
+  background-color: white;
+  height: 5rem;
+}
+
+.tres > main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 1rem;
+  padding: 0;
+}
+
+.tres > main > aside {
+  width: 30%;
+  height: 100%;
+  background-color: yellowgreen;
+}
+
+tres > main > aside {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.tres > main > article {
+  background-color: blue;
+}
+
+.tres * {
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+.tarjeta {
+  width: 80%;
+  height: 60%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.targeta > img {
+  height: 100%;
+}
+
+.contenido {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: start;
+  justify-content: space-evenly;
+  padding: 2rem;
+  background-color: white;
+}
+
+@media screen and (max-width: 480px) {
+  .dos {
+    width: 100%;
+    height: auto;
+    padding: 3rem 0;
+  }
+  .cards-3 {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .cards-3-item {
+    border-radius: 1rem;
+  }
+}
+
+@media screen and (min-width: 480x) and(max-width:768px) {
+  .dos {
+    height: auto;
+    padding: 3rem 0;
+  }
+  .cards-3 {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+
+  .cards-3-item {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .tarjeta {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .targeta > img {
+    width: 100%;
+  }
 }

@@ -1,0 +1,45 @@
+body {
+  height: auto;
+}
+
+.container {
+  margin: 6rem auto;
+  width: 70%;
+  height: 70vh;
+  background-color: lightgreen;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: stretch;
+  justify-content: start;
+  gap: 2rem;
+}
+
+.grow-3 {
+  flex-grow: 9;
+}
+
+.shrink-7 {
+  flex-shrink: 3;
+}
+.item {
+  background-color: red;
+  border: thin solid black;
+  width: 200px;
+}
+
+.container-letters {
+  margin: 5rem auto;
+  background-color: lightgrey;
+  width: 30%;
+  height: 30vh;
+  display: flex;
+  flex-flow: row;
+  align-items: start;
+  justify-content: center;
+}
+
+article {
+  font-size: 1rem;
+  background-color: white;
+  border: thin solid black;
+}

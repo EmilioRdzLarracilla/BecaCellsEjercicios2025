@@ -45,7 +45,6 @@ const showData = (data) => {
 d.addEventListener("click", (e) => {
   if (e.target.matches("python")) {
     const newFilter = e.target.textContent;
-
-    console.log(newFilter);
+    
   }
 });

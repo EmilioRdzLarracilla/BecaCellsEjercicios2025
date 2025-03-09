@@ -1,0 +1,25 @@
+.container {
+  width: 80%;
+  height: 50vh;
+  background-color: aqua;
+  display: grid;
+  grid-template-columns: 100px 100px 100px 100px 100px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 2fr;
+  /* repeat genera 3 colummas del mismo tamaño */
+  grid-template-columns: repeat(4, 100px);
+  /*   justify-content: center;
+  align-items: center;
+  justify-items: center; */
+  grid-template-rows: 50px 100px;
+  /* centra cada item al centro de la columna o fila */
+}
+
+.item {
+  background-color: lightcoral;
+  border: thin solid black;
+}
+
+.container:first-child {
+  background-color: blue;
+}
