@@ -1,0 +1,29 @@
+.box{
+    background-color: black;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    top: 0;
+}
+
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items:start;
+    width: 100%;
+    height: 500px;
+    gap: 10rem;
+    /*si es mas grande acomodalo con un salto de linea*/
+    flex-wrap: wrap;
+    /*flex-grow  */
+    /*investigar informacion*/
+    flex-shrink: calc();
+    /*forma en la que seva alinear */
+    align-self: stretch;
+}
+
+.container *{
+    background-color: blue;
+}
