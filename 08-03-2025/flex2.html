@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio con Flex</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            gap: 10px;
+            padding: 10px;
+            background-color: white;
+        }
+
+        header, footer {
+            background-color: gray;
+            height: 60px;
+        }
+
+        section {
+            display: flex;
+            flex: 1;
+            gap: 10px;
+        }
+
+        aside {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 20%;
+        }
+
+        nav {
+            background: steelblue;
+            flex: 1;
+        }
+
+        article {
+            background: lightcoral;
+            height: 100px;
+        }
+
+        main {
+            background: gold;
+            flex: 1;
+        }
+
+        footer {
+            background: lavender;
+        }
+    </style>
+</head>
+<body>
+    <header>Encabezado</header>
+    <section>
+        <aside>
+            <nav>Menu</nav>
+            <article>Extra</article>
+        </aside>
+        <main>Contenido Principal</main>
+    </section>
+    <footer>Pie de Pagina</footer>
+</body>
+</html>

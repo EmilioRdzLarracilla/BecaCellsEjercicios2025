@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio con Flex</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Ocupa toda la pantalla */
+            background-color: #1b2a38;
+        }
+
+        .container {
+            display: flex;
+            width: 90%;
+            max-width: 900px; /* Limita el ancho maximo de la pagina */
+            gap: 20px;
+            height: 80vh;
+        }
+
+        .card {
+            flex: 1;
+            padding: 30px;
+            border-radius: 10px;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 300px;
+        }
+
+        .sedan {
+            background-color: #d88a2b;
+        }
+
+        .suv {
+            background-color: #1e5151;
+        }
+
+        .luxury {
+            background-color: #0f3d4b;
+        }
+
+        h2 {
+            text-transform: uppercase;
+        }
+
+        p {
+            font-size: 14px;
+            margin: 15px 0;
+        }
+
+        .btn {
+            text-decoration: none;
+            padding: 10px 20px;
+            background-color: white;
+            color: black;
+            border-radius: 20px;
+            text-align: center;
+            align-self: center;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+        <article class="card sedan">
+            <h2>SEDANS</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio fugit ducimus explicabo. Veritatis iste at porro, amet ipsam odit sed sint. Aspernatur hic corporis fugiat dicta! Consequuntur molestias unde iure.</p>
+            <a href="#" class="btn">Learn More</a>
+        </article>
+
+        <article class="card suv">
+            <h2>SUVS</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, blanditiis. Reiciendis, voluptatum veniam? Fugiat aut sit, odit unde ex culpa eaque. Doloremque cumque non quos optio assumenda laboriosam magni omnis!</p>
+            <a href="#" class="btn">Learn More</a>
+        </article>
+
+
+        <article class="card luxury">
+            <h2>LUXURY</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, blanditiis. Reiciendis, voluptatum veniam? Fugiat aut sit, odit unde ex culpa eaque. Doloremque cumque non quos optio assumenda laboriosam magni omnis!</p>
+            <a href="#" class="btn">Learn More</a>
+        </article>
+    </section>
+</body>
+</html>
