@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        body {
+            display: grid;
+            grid-template-areas:
+                "header article2" /* El header y el footer ocupa dos columnas */
+                "nav article1" /* El nav es una columna y article1 es otra columna */
+                "nav article2" /* El nav es una columna y article2 es otra columna */
+                "footer footer"; /* El header y el footer ocupa dos columnas */
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto 1fr 1fr auto; 
+            gap: 10px;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        header {
+            grid-area: header; /* Manddmamos a llamar los estilos hechos */
+            background: #c8a2c8;
+            padding: 20px;
+        }
+
+        nav {
+            grid-area: nav;
+            background: #b2dfdb;
+            padding: 20px;
+        }
+
+        article:nth-of-type(1) {
+            grid-area: article1;
+            background: #f5deb3;
+            padding: 20px;
+        }
+
+        article:nth-of-type(2) {
+            grid-area: article2;
+            background: #f5deb3;
+            padding: 20px;
+        }
+
+        footer {
+            grid-area: footer;
+            background: #c8a2c8;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>header</header>
+    <nav>nav</nav>
+    <article>article</article>
+    <article>article</article>
+    <footer>footer</footer>
+</body>
+</html>
