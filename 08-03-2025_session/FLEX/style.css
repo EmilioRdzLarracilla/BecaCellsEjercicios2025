@@ -1,0 +1,44 @@
+
+/* body {
+    display: flex;
+    justify-content:  center;
+    align-items: center;
+    padding: 100px;
+} */
+
+.box {
+
+    background-color: black;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    top: 0;
+
+}
+.container{
+    background-color: darkgray ;
+    display: flex;
+    flex-direction: row;/* Cual va a ser el eje principal y como se va a comportar el contenido con respectos a ejes y,x */
+    justify-content: start;
+    align-items: start;
+    width: 100%;
+    height: 500px;
+    color: azure;
+    gap: 50%; /*rem em px  rem = 16px default of HTML*/    
+    flex-wrap: wrap;
+}
+.container * {
+    background-color: blue;
+}
+/* ITEM: flex-grow como crece deacuerdo a los demas elementos 
+         flex-shrink como va encoger deacuerdo a los demas elementos
+*/
+#item1 {
+    flex-grow: 2;
+    flex-basis: 100px;
+    align-self: stretch;/*Forma en la que se va a linear solo ese elemento*/
+}
+#item2 {
+    flex-grow: 1;
+    flex-basis: 100px;
+}
