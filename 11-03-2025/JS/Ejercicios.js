@@ -55,4 +55,3 @@ const inputUsuario1 = parseInt(prompt('Ingrese un numero a calcular:'));
 const calcular = new Factorial(inputUsuario1);
 calcular.mostrarResultado();
 
-

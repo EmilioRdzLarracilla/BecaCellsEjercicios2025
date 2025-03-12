@@ -39,3 +39,26 @@ console.log(set ,set.size)
 set.add('ads')
 console.log(set ,set.size,set.delete(5),set.delete(5))
 console.log(set.has('ads'), set.values[4])
+
+const map = new Map();
+map.set(1, 'uno');
+
+// if(map.set('uno')){
+
+// }else {
+//     map.set('one');
+// }
+const value = map.has(1)
+console.log(value)
+const otroValue = map.get(1)
+console.log(otroValue)
+console.log(map.delete(1))
+map.delete(1);
+
+let deleteResult = map.delete(0)
+console.log(deleteResult)
+map.clear();
+console.log(map)
+console.log(map.size)
+
+
