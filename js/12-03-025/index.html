@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla de Operaciones Lógicas</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 18px;
+            text-align: left;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Operaciones Lógicas en una Tabla</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>Expresión</th>
+            <th>Evaluación</th>
+        </tr>
+    </thead>
+    <tbody id="tablaResultados"></tbody>
+</table>
+
+<script>
+    // Lista de expresiones con su resultado
+    let operaciones = [
+        ["!!'hello' && false", !!"hello" && false],
+        ["!42 && true", !42 && true],
+        ["!!'JavaScript' && !!1", !!"JavaScript" && !!1],
+        ["!' ' && !true", !" " && !true],
+        ["!![] && 0", !![] && 0],
+        ["!'code' && 100", !"code" && 100],
+        ["!!'false' && undefined", !!"false" && undefined],
+        ["!null && !1", !null && !1],
+        ["!!{} && !!'hola'", !!{} && !!"hola"],
+        ["!NaN && ![]", !NaN && ![]]
+    ];
+
+    // Obtener la tabla y agregar filas dinámicamente
+    let tabla = document.getElementById("tablaResultados");
+
+    operaciones.forEach(op => {
+        let fila = `<tr>
+                        <td>${op[0]}</td>
+                        <td>${op[1]}</td>
+                    </tr>`;
+        tabla.innerHTML += fila;
+    });
+</script>
+
+</body>
+</html>
