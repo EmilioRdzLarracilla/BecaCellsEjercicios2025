@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Componente Web - Tarjeta de Usuario</title>
+</head>
+<body>
+
+    <!-- Uso del componente en HTML -->
+    <tarjeta-usuario nombre="Juan Pérez" profesion="Desarrollador"></tarjeta-usuario>
+    <tarjeta-usuario nombre="Ana Gómez" profesion="Diseñadora"></tarjeta-usuario>
+
+    <template id="plantilla-usuario">
+        <style>
+            .tarjeta {
+                border: 2px solid #333;
+                border-radius: 8px;
+                padding: 15px;
+                width: 220px;
+                text-align: center;
+                box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+                font-family: Arial, sans-serif;
+                margin: 10px;
+                background-color: #f9f9f9;
+            }
+            .tarjeta h3 {
+                margin: 0;
+                color: #007bff;
+            }
+            .tarjeta p {
+                margin: 5px 0 0;
+                font-weight: bold;
+            }
+        </style>
+        <div class="tarjeta">
+            <h3 id="nombre"></h3>
+            <p id="profesion"></p>
+        </div>
+    </template>
+
+    <script>
+        class TarjetaUsuario extends HTMLElement {
+            constructor() {
+                super();
+
+                // Crear shadow DOM
+                this.attachShadow({ mode: "open" });
+
+                // Clonar el contenido de la plantilla
+                const plantilla = document.getElementById("plantilla-usuario").content.cloneNode(true);
+                
+                // Obtener los atributos del HTML y asignarlos a la plantilla
+                plantilla.querySelector("#nombre").textContent = this.getAttribute("nombre");
+                plantilla.querySelector("#profesion").textContent = this.getAttribute("profesion");
+
+                this.shadowRoot.appendChild(plantilla);
+            }
+        }
+
+        // Registrar el componente
+        customElements.define("tarjeta-usuario", TarjetaUsuario);
+    </script>
+
+</body>
+</html>
