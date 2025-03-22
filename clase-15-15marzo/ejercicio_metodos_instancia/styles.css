@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+table,
+tr,
+th,
+td {
+  border: thin solid black;
+  border-collapse: collapse;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+
+.table-instance {
+  width: 100%;
+  text-align: start;
+}
+
+td,
+th {
+  padding: 0.5rem 2rem;
+}
+
+thead {
+  position: sticky;
+  top: 0;
+  background-color: red;
+  color: white;
+  text-transform: uppercase;
+}
+
+tbody {
+  background-color: #fff;
+}
+
+.rowTitle {
+  background-color: yellow;
+  text-align: center;
+  font-weight: bold;
+}

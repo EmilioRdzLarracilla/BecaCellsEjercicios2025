@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background-color: lightcyan;
+  width: 90%;
+  height: 70vh;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  overflow: auto;
+  border-radius: 1rem;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+    rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.table-logic {
+  font-family: sans-serif;
+  font-size: 1.15rem;
+  text-align: justify;
+  margin-top: 2rem;
+  width: 90%;
+}
+
+td,
+th,
+thead,
+tbody,
+table {
+  padding: 0.5rem 0.5rem;
+  border: thin solid black;
+  border-collapse: collapse;
+}
+thead {
+  position: sticky;
+  top: 0;
+  left: 0;
+  text-transform: uppercase;
+  background-color: blue;
+  color: white;
+}
+tbody {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 700;
+}
+
+th {
+  padding: 0.5rem;
+}
+
+.center {
+  text-align: center;
+}
+
+.rowYellow {
+  color: black;
+  background-color: yellow;
+}
+tr {
+  transition: ease all 0.5s;
+}
+tr:hover {
+  cursor: pointer;
+  color: white;
+  background-color: black;
+}

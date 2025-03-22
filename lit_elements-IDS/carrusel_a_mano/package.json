@@ -1,0 +1,26 @@
+{
+  "name": "carrusel_a_mano",
+  "version": "1.0.0",
+  "description": "proyecto de un carrusel de imagenes con lit elements",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "web-dev-server --node-resolve --open --watch"
+  },
+  "keywords": [
+    "lit",
+    "web",
+    "developer",
+    "js",
+    "software",
+    "engineer"
+  ],
+  "author": "emilio rodriguez larracilla",
+  "license": "ISC",
+  "dependencies": {
+    "lit": "^3.2.1"
+  },
+  "devDependencies": {
+    "@web/dev-server": "^0.4.6"
+  }
+}

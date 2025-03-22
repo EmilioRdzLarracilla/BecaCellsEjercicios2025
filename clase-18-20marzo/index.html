@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web components</title>
+  </head>
+  <style>
+    button {
+      background-color: red;
+    }
+  </style>
+  <body>
+    <my-template link="https://picsum.photos/200/300">
+      <p slot="description">cambio de forma</p>
+    </my-template>
+
+    <my-template link="https://picsum.photos/300/300">
+      <p slot="description">description de la imagen en un segundo template</p>
+    </my-template>
+    <my-template link="https://picsum.photos/400/300">
+      <p slot="description">description saludos</p>
+    </my-template>
+
+    <img-carousel
+      images='["https://cdn.gencraft.com/prod/user/23b6cd42-3012-412b-9d3c-fc9fbefb55a2/80e2c839-ca7e-4e75-b2fd-550390346812/image/image1_0.jpg?Expires=1750371671&Signature=EQ2ssGJRXxkdVbrbF21GOFJxQQICkCOzzaKaTbUqZhMzMcfCzQiP4OhrcHOWfA8VWAXU14T6mLP6zs6hp4KDPEZLacdGphk4hhV5nbRaiFxdY0mhAbp1rX2mYlfdkqBqZbmcnXKFF5ToTEfYb6r99Ay~eQDH3NYmEr8HcKgguffTi5MLNAd6F7kz5iMlcDZw6pSJSDEYIBcsUiOGrd2DZshCx~CgVA0Qrf9HXa3nXmCsdThXUkW4itEU3aAl-mLXIWhSPoQxl9b7MZfFK7HjpWMSWkoFbjL-ksCV5gk0U7gy-y0JLtx3Y7XZW3YVUPf3kCVTru4L10igcxFnROjNfw__&Key-Pair-Id=K3RDDB1TZ8BHT8","https://picsum.photos/600/300","https://picsum.photos/200/300","https://picsum.photos/400/300","https://picsum.photos/300/300"]'
+      width="300"
+      height="300"
+    ></img-carousel>
+    <img-carousel
+      images='["https://cdn.gencraft.com/prod/user/23b6cd42-3012-412b-9d3c-fc9fbefb55a2/80e2c839-ca7e-4e75-b2fd-550390346812/image/image1_0.jpg?Expires=1750371671&Signature=EQ2ssGJRXxkdVbrbF21GOFJxQQICkCOzzaKaTbUqZhMzMcfCzQiP4OhrcHOWfA8VWAXU14T6mLP6zs6hp4KDPEZLacdGphk4hhV5nbRaiFxdY0mhAbp1rX2mYlfdkqBqZbmcnXKFF5ToTEfYb6r99Ay~eQDH3NYmEr8HcKgguffTi5MLNAd6F7kz5iMlcDZw6pSJSDEYIBcsUiOGrd2DZshCx~CgVA0Qrf9HXa3nXmCsdThXUkW4itEU3aAl-mLXIWhSPoQxl9b7MZfFK7HjpWMSWkoFbjL-ksCV5gk0U7gy-y0JLtx3Y7XZW3YVUPf3kCVTru4L10igcxFnROjNfw__&Key-Pair-Id=K3RDDB1TZ8BHT8","https://picsum.photos/600/300","https://picsum.photos/200/300","https://picsum.photos/400/300","https://picsum.photos/300/300"]'
+      width="600"
+      height="600"
+    ></img-carousel>
+    <script type="module" src="main.js"></script>
+
+    <template id="cuadro-texto">
+      <style>
+        figure {
+          display: flex;
+          flex-flow: column nowrap;
+          align-items: center;
+          justify-content: space-around;
+          gap: 3rem;
+          margin: 3rem auto;
+          width: 50%;
+          border: thin solid black;
+        }
+        img {
+          margin-top: 3rem;
+          border-radius: 7px;
+        }
+        figcaption {
+          text-align: center;
+          font-weight: bold;
+          font-family: sans-serif;
+        }
+      </style>
+      <figure>
+        <img src="" alt="imagen-ejemplo" />
+        <figcaption>
+          <slot name="description">texto predeterminado</slot>
+        </figcaption>
+      </figure>
+    </template>
+  </body>
+</html>

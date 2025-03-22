@@ -1,0 +1,19 @@
+https://codeshare.io/KWDXeX
+
+Programación Orientada a Objetos con javascript
+Abstracción
+Clases
+Objeto
+Métodos de instancia
+Métodos estáticos
+Propiedades
+Setters and Getters
+Encapsulamiento
+Herencia
+Polimorfismo
+Abstracción
+Composición
+Agregación
+Asociación
+
+alta coesion y bajo acoplamiento

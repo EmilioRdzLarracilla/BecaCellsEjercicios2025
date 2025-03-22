@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jira grid</title>
+    <link rel="stylesheet" href="jira.css" />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap-icons/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <section class="container">
+      <section class="jira-search">
+        <img class="jira-logo" src="images/jira-1.svg" alt="jira-logo" />
+        <i class="bi bi-search"></i>
+        <i class="bi bi-plus-lg"></i>
+        <i class="bi bi-question-circle-fill"></i>
+      </section>
+      <nav class="jira-nav">
+        <div class="jira-user">
+          <img src="images/rocket-svgrepo-com.svg" alt="rocket" />
+          <div class="text">
+            <p class="bold">Team in space</p>
+            <p>Software project</p>
+          </div>
+        </div>
+        <div class="jira-nav-item">
+          <i class="bi bi-app-indicator"></i>
+          <p>Backlock</p>
+        </div>
+        <div class="jira-nav-item">
+          <i class="bi bi-bookshelf"></i>
+          <p>board</p>
+        </div>
+        <div class="jira-nav-item">
+          <i class="bi bi-graph-up-arrow"></i>
+          <p>Reports</p>
+        </div>
+        <div class="jira-nav-item">
+          <i class="bi bi-rocket-takeoff"></i>
+          <p>Releases</p>
+        </div>
+        <div class="jira-nav-item">
+          <i class="bi bi-cpu"></i>
+          <p>Components</p>
+        </div>
+        <div class="jira-nav-item">
+          <i class="bi bi-bug"></i>
+          <p>Issues</p>
+        </div>
+        <div class="jira-nav-item">
+          <i class="bi bi-chevron-bar-expand"></i>
+          <p>Repository</p>
+        </div>
+        <div class="jira-nav-item">
+          <i class="bi bi-file-plus"></i>
+          <p>Add item</p>
+        </div>
+        <div class="jira-nav-item">
+          <i class="bi bi-gear"></i>
+          <p>Settings</p>
+        </div>
+      </nav>
+      <section class="jira-content">
+        <article class="jira-content-search">
+          <h1>board</h1>
+          <div class="jira-content-search-release">
+            <button>release</button> <i class="bi bi-three-dots"></i>
+          </div>
+          <div class="jira-content-search-bar">
+            <input type="search" />
+            <select name="select-options" id="select-options">
+              <option selected value="">Quick filters</option>
+              <option value="one">one</option>
+              <option value="two">two</option>
+              <option value="three">three</option>
+            </select>
+          </div>
+        </article>
+        <article class="jira-content-cards">
+          <div class="to-do dragzone">
+            <h4>TO DO</h4>
+            <figure id="card-1" draggable="true" class="jira-card">
+              <p>Engage jupiter Express for uter solar system travel</p>
+              <h4 class="space">space travel patterns</h4>
+              <div class="jira-card-down">
+                <div class="icons">
+                  <i class="bi bi-chevron-double-up"></i
+                  ><i class="bi bi-3-circle-fill"></i>
+                </div>
+                <p>TIS-25</p>
+              </div>
+            </figure>
+            <figure id="card-2" draggable="true" class="jira-card">
+              <p>create 90 days plants for all department in the Mars oficce</p>
+              <h4 class="local">Local Mars office</h4>
+              <div class="jira-card-down">
+                <div class="icons">
+                  <i class="bi bi-chevron-double-up"></i
+                  ><i class="bi bi-3-circle-fill"></i>
+                </div>
+                <p>TIS-12</p>
+              </div>
+            </figure>
+            <figure id="card-3" draggable="true" class="jira-card">
+              <p>Engage Statum´s Rings Resort as a preferrend provider</p>
+              <h4 class="space">space travel patterns</h4>
+              <div class="jira-card-down">
+                <div class="icons">
+                  <i class="bi bi-chevron-double-up"></i
+                  ><i class="bi bi-3-circle-fill"></i>
+                </div>
+                <p>TIS-17</p>
+              </div>
+            </figure>
+            <figure id="card-4" draggable="true" class="jira-card">
+              <p>Enable Speedy Spacecraft as a preferred</p>
+              <h4 class="plus">SeeSpaceEZ Plus</h4>
+              <div class="jira-card-down">
+                <div class="icons">
+                  <i class="bi bi-chevron-double-up"></i
+                  ><i class="bi bi-3-circle-fill"></i>
+                </div>
+                <p>TIS-212</p>
+              </div>
+            </figure>
+          </div>
+          <div class="in-porgress dragzone">
+            <h4>IN PROGRESS</h4>
+            <figure id="card-5" draggable="true" class="jira-card">
+              <p>Requesting avaliable flights is now taking > 5 seconds</p>
+              <h4 class="plus">SeeSpaceEZ Plus</h4>
+              <div class="jira-card-down">
+                <div class="icons">
+                  <i class="bi bi-chevron-double-up"></i
+                  ><i class="bi bi-3-circle-fill"></i>
+                </div>
+                <p>TIS-8</p>
+              </div>
+            </figure>
+
+            <figure id="card-6" draggable="true" class="jira-card">
+              <p>Engage Saturn Shuttle Lines for group tours</p>
+              <h4 class="local">Local Mars Oficce</h4>
+              <div class="jira-card-down">
+                <div class="icons">
+                  <i class="bi bi-chevron-double-up"></i
+                  ><i class="bi bi-1-circle-fill"></i>
+                </div>
+                <p>TIS-15</p>
+              </div>
+            </figure>
+            <figure id="card-7" draggable="true" class="jira-card">
+              <p>Establish a catering vender to provide meal service</p>
+              <h4 class="space">Space Travel Patterns</h4>
+              <div class="jira-card-down">
+                <div class="icons">
+                  <i class="bi bi-chevron-double-up"></i
+                  ><i class="bi bi-3-circle-fill"></i>
+                </div>
+                <p>TIS-8</p>
+              </div>
+            </figure>
+            <figure id="card-8" draggable="true" class="jira-card">
+              <p>Engage Saturn Shuttle Lines for group tours</p>
+              <h4 class="space">Space Travel Patterns</h4>
+              <div class="jira-card-down">
+                <div class="icons">
+                  <i class="bi bi-chevron-double-up"></i
+                  ><i class="bi bi-9-circle-fill"></i>
+                </div>
+                <p>TIS-11</p>
+              </div>
+            </figure>
+          </div>
+          <div class="code-review dragzone">
+            <h4>CODE REVIEW</h4>
+            <figure id="card-9" draggable="true" class="jira-card">
+              <p>register with the Mars Ministry of Revenue</p>
+              <h4 class="local">Local Mars Office</h4>
+              <div class="jira-card-down">
+                <div class="icons">
+                  <i class="bi bi-chevron-double-up"></i
+                  ><i class="bi bi-4-circle-fill"></i>
+                </div>
+                <p>TIS-8</p>
+              </div>
+            </figure>
+            <figure id="card-10" draggable="true" class="jira-card">
+              <p>draft network plan for Mars Office</p>
+              <h4 class="local">Local Mars Office</h4>
+              <div class="jira-card-down">
+                <div class="icons">
+                  <i class="bi bi-chevron-double-up"></i
+                  ><i class="bi bi-2-circle-fill"></i>
+                </div>
+                <p>TIS-13</p>
+              </div>
+            </figure>
+          </div>
+          <div class="done dragzone">
+            <h4>DONE</h4>
+            <figure id="card-11" draggable="true" class="jira-card">
+              <p>draft network plan for Mars Office</p>
+              <h4 class="large">Large Team Support</h4>
+              <div class="jira-card-down">
+                <div class="icons">
+                  <i class="bi bi-chevron-double-up"></i
+                  ><i class="bi bi-7-circle-fill"></i>
+                </div>
+                <p>TIS-13</p>
+              </div>
+            </figure>
+            <figure id="card-12" draggable="true" class="jira-card">
+              <p>Engage JetShuttle SpaceWays for travel</p>
+              <h4 class="space">Space travel Partners</h4>
+              <div class="jira-card-down">
+                <div class="icons">
+                  <i class="bi bi-chevron-double-up"></i
+                  ><i class="bi bi-3-circle-fill"></i>
+                </div>
+                <p>TIS-13</p>
+              </div>
+            </figure>
+            <figure id="card-13" draggable="true" class="jira-card">
+              <p>Engage Saturn Shuttle Lines for group tours</p>
+              <h4 class="space">Space Travel Partners</h4>
+              <div class="jira-card-down">
+                <div class="icons">
+                  <i class="bi bi-chevron-double-up"></i
+                  ><i class="bi bi-5-circle-fill"></i>
+                </div>
+                <p>TIS-23</p>
+              </div>
+            </figure>
+            <figure id="card-14" draggable="true" class="jira-card">
+              <p>create jira web layout for class</p>
+              <h4 class="large">Beca cells 2025</h4>
+              <div class="jira-card-down">
+                <div class="icons">
+                  <i class="bi bi-chevron-double-up"></i
+                  ><i class="bi bi-2-circle-fill"></i>
+                </div>
+                <p>TIS-23</p>
+              </div>
+            </figure>
+          </div>
+        </article>
+      </section>
+    </section>
+    <script src="index.js"></script>
+  </body>
+</html>
