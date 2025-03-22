@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB COMPONENTS</title>
+    <style>
+        button {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <template id="tpl">
+        <style>
+            button {
+                background-color: blue;
+                padding: 10px 20px;
+                border: none;
+                cursor: pointer;
+            }
+        </style>
+        <button>CLICK ME!</button>
+    </template>
+
+
+    <my-button color="red"></my-button>
+    <my-button color="black"></my-button>
+    <my-button color="green"></my-button>
+    <my-button color="gray"></my-button>
+    <my-button color="orange"></my-button>
+    <my-button color="blue"></my-button>
+    <image-carousel width="800" height="400" images='[
+        "https://bmw.scene7.com/is/image/BMW/BMW-BANNER-MTRACK-3840x1680:3to1?fmt=webp&wid=1504&hei=501", 
+        "https://www.bmw.com.mx/es/index/_jcr_content/root/maincontent/contentblueprint_101/backgroundmedia_copy/image.coreimg.jpeg/1740180971592/bmw-banner-3840x1680.jpeg",
+        "https://bmw.scene7.com/is/image/BMW/X3-3840x1680-Clean-2:16to7?fmt=webp&wid=1504&hei=658"
+    ]'>
+    </image-carousel>
+
+    <script type="module" src="./main.js"></script>
+</body>
+</html>

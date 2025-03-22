@@ -1,0 +1,306 @@
+body {
+
+    display: grid;
+    grid-template-areas: 
+        "aside header"
+        "aside main"
+        "aside main"
+        "aside main"
+        "aside main";
+    font-family: Arial, sans-serif;
+    background-color: #f4f5f7;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: grid;
+    grid-area: header;
+    grid-template-rows: 10px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f4f5f7;
+    color: #000000;
+    bottom: 10px;
+}
+
+h1 {
+    font-family: Arial, sans-serif;
+    font-size: 40px;
+    color: #524f4f;
+}
+
+#inputSearch, #inputRelease {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#release {
+    margin-left: 26rem;
+    background-color: #d7cbcb60;
+    color: #000000;
+
+}
+
+#points {
+    width: 25px;
+    height: 25px;
+}
+
+.input-container {
+    position: relative;
+    display: flex;
+    width: 100%;
+}
+
+input#search {
+    width: 150px;
+    padding: 10px;
+    padding-right: 40px;
+    background-color: #afabab3c;
+    border: none;
+}
+
+button {
+    color: hsl(180, 8%, 52%);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+button#buscar {
+    position: absolute;
+    right: 450px;
+    background-color: transparent;
+    color: hsl(180, 8%, 52%);
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 8px;
+    margin-top: 10px;
+} 
+
+button#inputRelease {
+    width: 10px;
+    height: 10px;
+}
+
+#filters {
+    padding: 10px;
+}
+
+#filter {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+
+#filters ul {
+    list-style: none;
+    padding: 0;
+}
+
+#filters li {
+    padding: 5px 0;
+    cursor: pointer;
+}
+
+main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr; 
+    gap: 10px;
+    width: auto;
+}
+
+.board {
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+}
+
+.column {
+    background-color: #afabab25;
+    padding: 15px;
+    border-radius: 8px;
+    width: 22%;
+}
+
+.column h3 {
+    text-align: center;
+    color: rgb(49, 48, 48);
+    border-radius: 5px;
+    text-align: left;
+    font-size: 14px;
+}
+
+
+.card {
+    background: #ffffff;
+    border-radius: 5px;
+    padding: 15px;
+    width: 90px;
+    margin: 10px 0;
+    cursor: pointer;
+    text-align: left;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    transition: 0.2s;
+}
+
+.cardName {
+    font-size: 14px;
+}
+
+.footerCard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.icons, .foto {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+.space {
+    background-color: #fde401;
+    color: #0b0c0c;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 10px;
+}
+
+.mars {
+    background-color: #ee740a;
+    color: #f6f7f9;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 10px;
+}
+
+.support {
+    background-color: #9140ef;
+    color: #faf9f8;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 10px;
+}
+
+.plus {
+    background-color: #0ee1f8;
+    color: #f8f7f6;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 10px;
+}
+
+.tis {
+    font-size: 8px;
+    color: #524f4f;
+}
+
+aside {
+    display: grid;
+    grid-area: aside;
+    grid-template-columns: 100px 150px; 
+    background-color: #f4f4f4;
+}
+
+.blue-line {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    background-color: #070ae8f6;
+    padding: 10px;
+    justify-content: center;
+
+}
+
+.blue-line article {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: start;
+    justify-content: center;
+}
+
+.blue-line img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.blue-line button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.blue-line button img {
+    width: 30px;
+    height: 30px;
+}
+
+.menu {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    background-color: #cecfd114;
+    color: #0052cc;
+    justify-content: center;
+}
+
+#menuTitle {
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #cac4c4;
+}
+
+#title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#subtitle {
+    font-size: 14px;
+    color: rgb(120, 117, 117);
+}
+
+.options {
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 10px;
+    padding-top: 10px;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #cecfd114;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.option img {
+    width: 20px;
+    height: 20px;
+}
+
+
+
+
+
+
+
+
+

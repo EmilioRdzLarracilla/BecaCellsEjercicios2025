@@ -1,0 +1,24 @@
+.container {
+    display: grid;
+    background-color: tomato;
+    grid-template-columns: 100px 100px; /*para generar n columnas, acepta (fr fraccion es un unico valor ) */
+    /*gridtemplate-colums: 1fr 2fr;  s epueden combinar los valores y las unidades; repeat():repite un valor
+    el numero de veces que se le diga repeat(3,200px) */
+    justify-content: center; /* sirve para centrar horizontalmente en la celda pero no se utiliza en grid*/
+    
+    justify-items: center;/*alinea losobjentro dentro de su celda, este es el que se utilza em grid*/
+    align-items: center; /*alinea de forma transversal los objetos */
+    grid-template-rows: 50px 100px;
+}
+
+.items {
+    border: 1px solid black;
+    background-color: white;
+
+
+}
+
+.container > :first-child {
+    grid-column: 1 / 3; /* indica de donde a donde va un item en las colummas*/
+    grid-row: 2 / 4; /* indica de donde a donde va un item en las filas*/
+}
