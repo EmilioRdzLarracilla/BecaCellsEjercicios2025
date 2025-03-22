@@ -1,0 +1,10 @@
+body{
+    background-color: thistle;
+}
+  
+.box{
+background-color:  black;
+position: absolute;
+width: 100px;
+height: 100px;
+  }

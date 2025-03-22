@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML FORMS</title>
+</head>
+<body>
+  
+    <label for="accept" > acepta terminos</label>
+    <input type="checkbox" id="accept">
+    <br>
+    <label for="option">selecciona una de las dos opciones</label>
+    <input type="radio" id="option" name="option">A
+    <input type="radiO" id="option" name="option">B
+    <br>
+    <select name="options" id="options">
+      <option selected value="selecciona pais">Selecciona Pais</option>
+<option value="mexico">Mexico</option>
+<option value="costarica">Costa Rica</option>
+<option value="brasil">Brasil</option>
+<option value="rumania">rumania</option>
+<option value="argentina">argentina</option>
+<option value="españa">España</option>
+
+    </select>
+
+    <textarea name="" id="" maxlength="4"></textarea>
+    <input value="click me" type="button" name="" id="">
+    <br> <button>da click aqui</button>
+    <br>
+  </body>
+
+  <form action="" method=""> <!--method={GET,POST,PUT}-->
+
+  </form>
+
+  <fieldset><!--permiteb agrupar elementos dentre de un formulario-->
+    <legend>Informacion Personal</legend><!--describe la seccion-->
+    <label for="password">Password</label>
+    <input type="password" id="password"> 
+    <br>
+     <label for="nombre" >Nombre</label> <!--referenciar imput con label deben tener el mismo nombre-->
+      <input placeholder="ingresa tu nombre" required name="nombre" type="text" id="nombre">
+      <br>
+      <label for="password">Password</label>
+  <input type="password" id="password"> 
+   <label for="nombre" >Nombre</label> <!--referenciar imput con label deben tener el mismo nombre-->
+    <input placeholder="ingresa tu nombre" required name="nombre" type="text" id="nombre">
+    <br>
+  </fieldset>
+</html>

@@ -1,0 +1,12 @@
+.container{
+    display: grid;
+    background-color: brown;
+    grid-template-columns: repeat(4, 100px);
+    justify-content: center;
+    justify-items: center;
+}
+.item{
+    background-color: cadetblue;
+    border: solid black;
+}
+

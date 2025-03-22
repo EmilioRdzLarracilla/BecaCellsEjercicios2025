@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Registro de Productos</h1>
+ <form action="productos.html" method="post" id="formulario">
+        
+        
+<label for="producto" >Nombre del producto</label> <!--referenciar imput con label deben tener el mismo nombre-->
+<input placeholder="Producto" required name="producto" type="text" id="producto">
+
+<br>
+<br>
+<label for="descripcion" >Descripcion del articulo</label>
+<textarea required name="descripcion" id="descripcion"></textarea>
+<br>
+<br>
+
+<label for="precio">Precio</label> <!--referenciar imput con label deben tener el mismo nombre-->
+<input placeholder="Precio" required name="precio" type="number" id="precio">
+<br>
+<br>
+<label for="stock" >Stock</label> <!--referenciar imput con label deben tener el mismo nombre-->
+<input placeholder="cantidad de articulos disponibles" required name="stock+" type="number" id="stock">
+    <br>
+
+    <br>
+        
+    </form>
+    <button type="submit" id="enviar">Enviar</button>
+    
+    
+</body>
+<script src="function.js"></script>
+</html>

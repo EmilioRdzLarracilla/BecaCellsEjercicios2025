@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+.container {
+    display: flex;
+    height: 100vh; 
+    width: 100vw;
+}
+
+
+.sidebar {
+    width: 30%;
+    background-color:#483eff; 
+    padding: 40px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.pasos p {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #ffffffaa;
+}
+
+.paso-numero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.active {
+    background: white;
+    color: #483eff;
+}
+
+
+.content {
+    width: 70%;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: white;
+}
+
+
+h3 {
+    color: #002766;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px; 
+}
+
+
+input[type="radio"] {
+    margin-bottom: 10px;
+}
+
+
+label {
+    font-size: 16px;
+    background: #f4f4f4;
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: block;
+    margin-bottom: 10px;
+}
+
+
+input[type="submit"] {
+    background: #002766;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+button {
+    background: #1663df;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  button:hover {
+    background: #052159;
+  }

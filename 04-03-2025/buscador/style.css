@@ -1,0 +1,217 @@
+
+ /*  body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    position: relative;
+
+  }
+  form {
+    display: flex;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    position: relative;
+  }
+  input,
+  button {
+    border: none;
+    background: white;
+    margin: 100;
+  }
+  input {
+    font-size: 16px;
+    padding: 10px 12px;
+    width: 500px;
+  }
+  button {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  ul {
+    position: absolute;
+    top: 100%;
+    margin-top: -1px;
+    width: 100%;
+    z-index: 1;
+    background: #fff;
+    margin: 0;
+    list-style: none;
+    transition: none;
+    padding: 0;
+    border: 1px solid #bfc8c9;
+  }
+  ul li {
+    padding: 6px 12px;
+    transition: 0.2s background;
+    cursor: pointer;
+  }
+  ul li:hover {
+    background: #ffffff;
+  }
+  ul li + li {
+    border-top: 1px solid #bfc8c9;
+  }
+  .hidden {
+    display: none;
+  }
+  img{
+    padding: 100px;
+    width: 500px;
+    height: 180px;
+   margin: auto;
+   display: block;
+    
+  }
+  
+  Estilo para la lista de sugerencias 
+  ol {
+    list-style-type: none;  /* Elimina los números de la lista 
+    padding-left: 0;
+    margin-top: 5px;
+    background-color: white;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 100%;  /* Hace que el ancho de la lista sea igual al del input 
+    max-height: 200px;
+    overflow-y: auto;
+    position: absolute;
+    top: 100%;  /* Asegura que la lista esté justo debajo del input 
+    left: 0;  /* Alinea la lista al borde izquierdo del contenedor 
+    z-index: 10;
+  }
+  
+  Estilo de cada item de la lista 
+  ol li {
+    padding: 12px 20px;
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-bottom: 1px solid #f1f1f1;
+    text-align: left;  /* Alineación de los elementos a la izquierda 
+  }
+  
+Efecto hover sobre los items 
+  ol li:hover {
+    background-color: #f1f1f1;
+  }
+    img{
+    padding: 100px;
+    width: 500px;
+    height: 180px;
+   margin: auto;
+   display: block;
+}
+  */
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    box-sizing: border-box;
+    flex-direction: column; /* Apilamos los elementos de manera vertical */
+    text-align: center;
+}
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+/* Contenedor de la imagen y el formulario */
+.container {
+    width: 100%;
+    max-width: 500px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilo de la imagen centrada */
+img {
+    padding: 100px;
+    width: 500px;
+    height: 180px;
+   margin: auto;
+   display: block;
+}
+
+/* Estilo del input de búsqueda */
+#predictiveInput {
+    width: 100%;
+    padding: 10px;
+    margin: 1px 0;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    font-size: 17px;
+}
+
+/* Estilo del botón de búsqueda */
+#busqueda {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+#busqueda:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo para la lista de predicciones */
+ol {
+    margin-top: 10px;
+    padding: 0;
+    list-style-type: none;
+    width: 100%; /* El mismo ancho que el input */
+    max-height: 200px; /* Altura ajustable según el contenido */
+    overflow-y: auto;
+    border: 1px solid #ccc;  /* Borde para que se vea claramente */
+    border-radius: 4px; /* Bordes redondeados */
+    box-sizing: border-box; /* Aseguramos que el padding no afecte al tamaño total */
+}
+
+li {
+    background-color: #fff;
+    padding: 10px;
+    margin: 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+li:hover {
+    background-color: #f1f1f1;
+}
+
+/* Estilo para los mensajes de error */
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: center;
+}

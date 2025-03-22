@@ -1,0 +1,74 @@
+body{
+    background-color:cadetblue;
+    display: grid;
+    align-items: center;
+    height: 300px;
+    margin: 0;
+    
+}
+.container{
+    display: grid;
+    gap: 1em;
+    width: 400px;
+    height: 300px;
+    margin: 100px;
+    grid-template-columns:repeat( 3,1fr);
+    grid-template-rows: repeat(4,1fr);
+}
+
+.espacio {
+    
+    padding: 20px;
+    color: rgb(255, 255, 255);
+    display: grid;
+    align-items: center; 
+    text-align: center;
+    flex-direction: row;
+    border-radius: 40%;
+}
+
+.uno{
+    background-color: rgb(213, 172, 207);
+    border-radius: 5%;
+    grid-column-start: 1;
+    grid-column-end: 4;
+   
+}
+.dos{
+    background-color:rgb(108, 225, 161);
+    border-radius: 10%;
+    grid-row-start: 2;
+    grid-row-end: 6 ;
+  
+    
+}
+.tres{
+    background-color:goldenrod;;
+    border-radius: 10%;
+    grid-row-start:2 ;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-end: 5;
+
+    
+   
+}
+.cuatro{
+    background-color:goldenrod;
+    border-radius: 10%;
+    grid-row-start: 5;
+    grid-column-start: 2;
+    grid-row-end: 6;
+    grid-column-end: 4;
+    
+}
+.cinco{
+   
+    background-color: plum;
+    border-radius: 10%;
+    grid-row-start: 6;
+    grid-column-start: 1;
+    grid-column-end: 4;
+
+}
+

@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../.."
+		},
+		{
+			"path": "../../../../Downloads/static-job-listings-master"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "BecaCells2025"
+	}
+}

@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+}
+/*#ID*/
+#titulo
+{
+color: rgb(9, 49, 160);
+}
+/*typo*/
+p{
+    color: rgb(120, 6, 71);
+}
+
+
+/* Pseudo class*/
+p:hover{
+    color: green;
+}
+/*pseudo elementos * identifica pequeñas secciones del elemento*/
+
+p::first-letter{
+    color: purple;
+    text-transform: uppercase;
+}
+
+/* class / todos los elementos con clase tendras las mismas caracteristicas*/
+p.bold{
+    font-weight: bold;
+    color: yellowgreen;
+}
+/*attribute*/
+[class="bold"]
+{
+    color: black;
+}
+/*combinadores >, ' ',+ */
+/* >   buscar hijos*/
+
+section > article > p.bold{
+    color: turquoise;
+}
+
+section > p{
+    color: blueviolet;
+}
+
+/* ' ' Descendientes*/
+
+section p {
+    color: chocolate;
+}
+/* +   hermanos */
+
+h1 + p {
+    color: coral;
+}

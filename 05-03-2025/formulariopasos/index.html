@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Barra lateral -->
+        <aside class="sidebar">
+            <div class="pasos">
+                <p><span class="paso-numero active">1</span> Informacion Personal</p>
+                <p><span class="paso-numero ">2</span> Planes</p>
+                <p><span class="paso-numero ">3</span> Datos Bancarios</p>
+                <p><span class="paso-numero ">4</span> Resumen</p>
+            </div>
+        </aside>
+
+        <!-- Contenido principal -->
+        <main class="content">
+            <h2>Informacion Personal</h2>
+            <p>Por favor ingresa tu nombre,Correo electronico, y Numnero de telefono.</p>
+            
+            <form>
+                <label for="nombre">Nombre</label>
+                <input id="nombre" type="text" name="nombre" placeholder="Juan Pererez" required>
+                
+                <label for="email">Correo Electronico</label>
+                <input id="email" type="email" name="email" placeholder=" juanp@gmail.com" required>
+                
+                <label for="telefono">Telefono</label>
+                <input id="telefono" type="tel" name="telefono" placeholder="722-503.9082" required>
+                
+                <button  type="submit">Siguiente</button>
+            </form>
+        </main>
+    </div>
+
+</body>
+</html>

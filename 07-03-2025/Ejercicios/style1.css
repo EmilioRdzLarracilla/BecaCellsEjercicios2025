@@ -1,0 +1,57 @@
+body {
+    background-color: #5792b7; 
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    height: 300px;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    gap: none;
+    width: 80%;
+    max-width: 900px;
+    justify-content: center;
+}
+
+.tarjeta {
+    flex: 1;
+    padding: 20px;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+.sedan {
+    background-color: #e99d3a;
+}
+
+.suv {
+    background-color: #277a84;
+}
+
+.luxury {
+    background-color: #144c52;
+}
+
+
+button {
+    display: flex;
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: #ddd;
+}

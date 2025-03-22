@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta chareset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Estilos CSS</title>    
+    </head>
+<body>
+    <form action="">
+        <label for="name">Name</label>
+        <input id="name" type="text">
+        <button>summit</button>
+    </form>    
+
+    <main>
+        <header>
+            <h1>Inicio de pagina</h1>
+
+        </header>
+        <article>
+
+        </article>
+
+        <nav>
+            <ul>
+                <li>
+
+                </li>
+            </ul>
+        </nav>
+    </main>
+
+    <details>
+        <summary>Detalles adicionales</summary>
+        <p>Se debe mostrar al darle clic a detail</p>
+    </details>
+</body>
+</html>

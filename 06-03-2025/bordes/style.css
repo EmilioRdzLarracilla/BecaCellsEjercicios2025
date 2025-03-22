@@ -1,0 +1,24 @@
+body{
+    font-family: "roboto", sans-serif;/*fallback value*/
+    font-weight: light ;
+    font-style: italic;/*la letra puede estar tachada,sobrajada*/
+    font-size: 1rem;
+    background-color: rgb(8, 8, 1);/*fallback rules or values hay que usarlo cuando el navegador no acepte una propiedad*/
+    color: rgba(255,255,255);
+    
+      
+    }
+    #a{
+        width: 300px;
+        height: 300px;
+        text-align: center;
+        background-color: rgb(15, 59, 205);
+        color: rgb(166, 255, 0);
+        margin: 10rem;
+        padding: 1rem;
+        box-sizing: border-box;
+        border-right: solid;
+        border-top: double;
+        border-bottom: dotted;
+        border-left: dashed;
+      }

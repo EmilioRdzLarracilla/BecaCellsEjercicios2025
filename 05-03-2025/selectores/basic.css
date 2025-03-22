@@ -1,0 +1,82 @@
+body{
+font-family: "roboto", sans-serif;/*fallback value*/
+font-weight: light ;
+font-style: italic;/*la letra puede estar tachada,sobrajada*/
+font-size: 1rem;
+
+
+    
+  background-image: url(https://www.mckinsey.com/spContent/bespoke/tech-trends-2024-hero-nav/techtrends-hero-desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgb(125,120,85);/*fallback rules or values hay que usarlo cuando el navegador no acepte una propiedad*/
+  color: rgba(255,255,255);
+
+  
+}
+article{
+    font-size: 15px;
+    padding: 2rem;
+    border: 1px solid red;
+    
+    
+}
+
+p{
+    font-size: unset; /*Hereda el valor del padre*/
+   /*  padding: inherit;el valor sera el mismo que el padre*/
+text-align: center;/*cambia la direccion del texto,centro(center,rigth(derecha) justify,*/
+padding: unset ;
+
+line-height: 30px;/*tamaño entre lineas de texto*/
+  }
+  #parentA{
+    background-color: brown;
+    width: 50%;
+    height: 400px;
+  }
+
+  #a{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    color: rgb(0, 255, 136);
+    margin: 2rem;
+    padding: 1rem;
+    box-sizing: border-box;
+    border-radius: 50px;
+    position: relative;
+    top: 200px;
+  }
+
+  #b{
+    width: 100px;
+    background-color: yellow;
+    color: black;
+    height: 100px;
+    /*margin: 2rem 1rem;shothands*/
+    margin-top: 4rem ;
+    margin-right: 3rem;
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+    padding: 2rem;/* este es el shorthand pero podemos setear el valor para cada lado de la caja*/
+    position: sticky;
+    top: 10px;
+    left: 10px;;
+  }
+  span{
+    height:200px;
+    width: 200px;
+    display: block;
+    
+  }
+  
+  .container-box{
+    background-color:  black;
+    position: relative;
+  }
+
+  .box{
+    position: absolute;
+    background-color: darkgreen;
+  }

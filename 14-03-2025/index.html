@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <section class="calculadora">
+        <section class="arriba">
+            <H2>CASIO</H2>
+           <br>
+        <section class="pantalla">
+            <input type="text" id="mostrar" >
+        </section>
+        </section>
+       
+        <br>
+       
+        <section class="teclas">
+            <button class="btn limpiar" onclick="limpiarPantalla()">ON</button>
+            <button class="btn operador" onclick="memoriaRecuperar()">MRC</button>
+            <button class="btn operador" onclick="memoriaSumar()">M+</button>
+            <button class="btn operador" onclick="agregarOperacion('!')">!</button>
+            <button class="btn limpiar" onclick="limpiarPantalla()">C</button>
+
+
+            <button class="btn" onclick="agregarNumero('7')">7</button>
+            <button class="btn" onclick="agregarNumero('8')">8</button>
+            <button class="btn" onclick="agregarNumero('9')">9</button>
+            
+            <button class="btn operador" onclick="agregarOperacion('√')">√</button>
+            <button class="btn operador" onclick="agregarOperacion('^')">^</button>
+            
+            <button class="btn" onclick="agregarNumero('4')">4</button>
+            <button class="btn" onclick="agregarNumero('5')">5</button>
+            <button class="btn" onclick="agregarNumero('6')">6</button>
+
+           
+            <button class="btn operador" onclick="agregarOperacion('-')">-</button>
+            <button class="btn operador" onclick="agregarOperacion('+')">+</button>
+            <button class="btn" onclick="agregarNumero('3')">3</button>
+            <button class="btn" onclick="agregarNumero('2')">2</button>
+            <button class="btn" onclick="agregarNumero('1')">1</button>
+            <button class="btn operador" onclick="agregarOperacion('*')">×</button>
+            
+
+            <button class="btn operador" onclick="agregarOperacion('/')">/</button>
+            <button class="btn" onclick="agregarNumero('0')">0</button>
+            <button class="btn" onclick="agregarNumero('00')">00</button>
+
+           
+            <button class="btn operador" onclick="agregarOperacion('exp')">EXP</button>
+
+           
+            <button class="btn igual" onclick="calcularResultado()">=</button>
+            
+        </section>
+    
+    </section>
+    
+    
+</body>
+<script src="fun.js"></script>
+</html>

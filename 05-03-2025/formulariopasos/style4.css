@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 30%;
+    background-color:#483eff; 
+    padding: 40px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.pasos p {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.paso-numero {
+    background: white;
+    color: #3b82f6;
+    padding: 5px 10px;
+    border-radius: 50%;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.active {
+    background: white;
+    color: #3b82f6;
+}
+
+.content {
+    width: 70%; 
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: white;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.summary-box {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.confirm-btn {
+    background: #002766;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.confirm-btn:hover {
+    background: #001a4d;
+}

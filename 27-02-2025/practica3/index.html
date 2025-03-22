@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!--Etiquetas de Estructura-->
+<html lang="en"> <!--contenido de pagina HTML-->
+<head> <!-- Contiene los metadaros de la pagina {Titulo,enlaces a CSS,entre otros}-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body><!--Todo el contenido referente y visible de la pagina-->
+    
+<!--Etiquetas de Texto-->
+
+<h1>Esto es un encabezado principal</h1><!-- estas etiquetas son usadas para definir encabezados
+de diferentes niveles que van desde <h1> el mas imoportante  hasta <h6> menos importante -->
+<h2>Esto es un subencabezado</h2>
+<h6>Esto es un encabezado de 6to nivel</h6>
+
+<p>Hola soy un parrafo, Usando HTML por primera vez, ¡Cielos estoy perdido!</p> <!--Define los parrafos del texto-->
+
+<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Haz clic aqui y descubre la magia</a> <!--Enlaces: esta etiqueta es usada para crear enlaces a otras
+ paginas o recursos {href=""-> es un atributo que indica la URL destino}-->
+<br>
+<br><!--Saltos de Linea-->
+
+<!--Etiquetas de Medios{Imegenes <img>, audio <audio>, video <video>}-->
+<img src="img/html.png" alt="referencia HTML" width="200" height="100" title="HTML REFERENCIA"><!--Imagen: es usada para la insercion de imagenes
+contiene atributos como {src="indica la ruta de la imagen", alt="proporciona un texto alternativo si la imagen no se puede mostrar"
+width y height: establecen la dimencion de la imagen}-->
+
+
+<!--Listas no Ordenadas (bullets) <ul> & <li>-->
+    <h5>Listas no ordenadas</h5>
+<ul> <!--los elementos de la lista apareceran con viñetas(bullets) por defect
+{Es ideal para las listas en el que el orden no importa} -->
+
+<li>esto es un elemento</li><!--<li> Es un item o elemento dentro de la lista-->
+<li>esto es otro elemento</li>
+<li>elemento adicional</li>
+<li>uno mas</li>
+
+</ul>
+
+<!--Listas ordenadas-->
+<h5>Listas ordenadas</h5>
+<ol><!--Lista ordenada Enumerada-->
+<li>Primer elemento</li>
+<li>Segundo elemento</li>
+<li>tercer elemento</li>
+<li>...</li>
+
+</ol>
+
+<!--DIV {Contenedor Generico de bloques} se usa para estructurar el contenido-->
+<div class="contenedor"><!--Se unsa para agrupar otros elementos y aplicarles estilos o manipularlos como una unidad
+ puede contener diferentes tributos e identificadores, ejemplo
+ clas="conteiner"==asigna una clase al elemento y es util para aplicar estilos con CSS   -->
+
+    <h1>Encabezado dentro de un div</h1>
+
+    <p>Anexamos un parrafo </p>
+
+    <ol>
+<li>aqui hay mas elemetos</li>
+<li>un elemento mas</li>
+    </ol>
+</div>
+
+<span></span><!--Se usa para contenido en linea(sin interrupcion del flujo de texto)-->
+<p>el cielo es: <span style="color: blue;">Azul</span></p>
+<h3>he creado un formulario</h3>
+
+<!--Etiquetas de Formulario-->
+<form action="/summit" method="POST"> <!--Sirve para crear Formularios-->
+<label for="name">nombre:</label>
+<input type="text" id="name" name="name"><!--Input: crea controles ingteractivos dentro de un formulario
+permiten ingresar datos,{type: define el tipo de control que se mostrara}-->
+<br><label for="ocupation">ocupacion</label>
+<input type="text" name="ocupation" id="ocupation">
+<br><label for="password">password</label>
+<input type="password" name="passwordd" id="passwd">
+<input type="submit" value="send">
+
+</form>
+<!--atributos del formulario-->
+<!--action: Especifica la ruta URL a la que se enviaran los datos-->
+<!--method: Define el metodo a usar en HTTP (GET/POST)-->
+
+
+</body>
+</html>
