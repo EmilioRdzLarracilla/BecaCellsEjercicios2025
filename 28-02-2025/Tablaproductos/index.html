@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="+width=device-width, initial-scale=1.0"/>
+    <title>Tabla Compleja de Productos</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+        
+        .table {
+            width: 50%;
+            border: 1px solid black; 
+            margin: auto;
+            table-layout: fixed;
+        }
+
+        .contenedor_info {
+            width: 50%;
+            margin: 0 auto;
+            padding: 20 px;
+            border: 2 px solid black;
+            text-align: center;
+        }
+            
+        .contenedor_text {
+            width: 65%;
+            margin: 0 auto;
+            padding: 0 px;
+            border: 0 px solid black;
+            text-align: justify;
+        }
+    </style>
+<body>
+    <h1>EJERCICIO TABLA COMPLEJA DE PRODUCTOS</h1>
+    <div class="contenedor_text">
+        <p>Queremos crear una tabla que represente una lista de productos de una tienda. <b>La tabla tendrá las siguientes características:</b></p>
+        <ul>
+            <li>Encabezados que describan las columnas: Producto, precio, descripción y disponibilidad</li>
+            <li>Algunas celdas que estén combinadas usando colspan o rowspan</li>
+            <li>Diferentes estilos para algunas celdas (colores, bordes, etc.)</li>
+        </ul>
+    </div>
+    <br>
+    <table border="1" class="table" style="border-color:blue; width: 60%; height: 100%;">
+            <tr style="background: orange; text-align: center; color: black;">
+                <th rowspan="8">    <table> TIENDA DE SAUL </table></th>
+                <th colspan="4">PRODUCTOS DE LA TIENDA DE LA ESQUINA</th>
+            </tr>
+            <tr style="background: yellow; text-align: center; color: black;">
+                <th>PRODUCTO</th>
+                <th>PRECIO</th>
+                <th>DESCRIPCIÓN</th>
+                <th>DISPONIBILIDAD</th>
+            </tr>
+            <tr style="text-align: center;">
+                <td>CHOCOLATE</td>
+                <td>$30</td>
+                <td>GRANULADO DE CHOCOLATE EN POLVO</td>
+                <td>MEDIA</td>
+            </tr>
+            <tr style="text-align: center;">
+                <td>GALLETAS</td>
+                <td>$15</td>
+                <td>GALLETA SABOR VAINILLA</td>
+                <td>ALTA</td>
+            </tr>
+            <tr style="text-align: center;">
+                <td>LECHE</td>
+                <td>$18</td>
+                <td>LECHE DE VACA</td>
+                <td>ALTA</td>
+            </tr>
+            <tr style="text-align: center;">
+                <td>PAN INTEGRAL</td>
+                <td>$48</td>
+                <td>PAN INTEGARL BIMBO</td>
+                <td>MEDIA</td>
+            </tr>
+            <tr style="text-align: center;">
+                <td>PAPAS</td>
+                <td>$14</td>
+                <td>FRITURA DE PAPA</td>
+                <td>BAJA</td>
+            </tr>
+            <tr style="text-align: center;">
+                <td>CERVEZA 1LT</td>
+                <td>$38</td>
+                <td>BEBIDA A BASE DE CEBADA</td>
+                <td>ALTA</td>
+            </tr>
+    </table>
+</body>
+</html>

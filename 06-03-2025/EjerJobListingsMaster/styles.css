@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "League-spartan", sans-serif;
+    background-color: hsl(180, 52%, 96%);
+}
+
+header img {
+    width: 100%;
+    background-size: cover;
+}
+
+main {
+    padding: 20px;
+}
+
+.input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+input#input-filter {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid hsl(180, 31%, 95%);
+    border-radius: 5px;
+    outline: none;
+    padding-right: 100px; 
+    margin-bottom: 15px;
+}
+
+button#Clear {
+    position: absolute;
+    right: 10px;
+    background-color: transparent;
+    color: hsl(180, 8%, 52%);
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    margin-right: 40px;
+    margin-top: 10px;
+} 
+
+button#Clear:hover {
+    color: hsl(180, 29%, 50%);
+}
+
+section#jobs-listings {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.bgd-square {
+    background-color: hsl(180, 52%, 96%);
+    padding: 13px 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px hsl(180, 14%, 20%);
+    border-left: 8px solid hsl(180, 29%, 50%);
+    margin-bottom: 20px;
+}
+
+.bgd-square img {
+    width: 50px;
+    height: 50px;
+    margin-top: -70px;
+}
+
+p#company {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    color: #03dbcb;
+    
+}
+
+.new {
+
+    display: inline-block;
+    margin-left: 60px;
+    padding: 5px 12px;
+    border-radius: 20px;
+    color: hsl(180, 52%, 96%);
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.feature {
+
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 20px;
+    color: hsl(180, 52%, 96%);
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.new {
+    background-color: hsl(180, 29%, 50%);
+}
+
+.feature {
+    background-color: hsl(180, 14%, 20%);
+}
+
+p#applied-position {
+    font-size: 16px;
+    color: hsl(180, 14%, 20%);
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+p#conditions {
+    font-size: 16px;
+    font-weight: bold;
+    color: hsl(180, 8%, 52%);
+    margin-bottom: 10px;
+}
+
+hr {
+    border: 0px;
+    height: 1px;
+    background:  hsl(180, 8%, 52%);
+    margin: 10px 0;
+}
+
+.options {
+    display: inline-block;
+    padding: 5px 15px;
+    background-color: rgba(20, 102, 102, 0.228);
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    color: hsl(180, 29%, 50%);
+    margin: 5px 5px 0 0;
+}

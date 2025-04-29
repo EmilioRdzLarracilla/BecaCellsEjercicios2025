@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <figure>
+        <img src="imagen.png" alt="Imagen de la silueta de un humano">
+        <figcaption>Imagen representativa de una figura humana</figcaption> <!--sirve para la ccesibilidad de la figura-->
+    </figure>
+
+    <label for="nivel">Novel de habilidad</label>
+    <meter id="nivel" value="0.7" min="0" max="1"></meter> <!--nueva etiqueta de HTML, trabaja con valores fraccionales, es un visual se controla con JS-->
+
+    <label for="predictive">Search a topics</label>
+    <input type="text" list="colores" name="colors" id="colors">
+
+    <datalist id="colores">
+        <option value="rojo"></option>
+        <option value="azul"></option>
+        <option value="verde"></option>
+        <option value="cafe"></option>
+        <option value="anmarillo"></option>
+    </datalist>
+
+
+    <template id="template">
+        <p>Lorem ipsum dolor sit amet consecteur </p>
+    </template>  <!--es una plantilla para poder copiar codigo HTML, SIRVE PARA PODER CLONAR EL CONTENIDO-->
+    <script async defer src=""> // async y defer te ayuda a que no truene el DOM
+        const template = document.getElementById("template"); //se genera un referencia y se le adjunta la referencia del template
+        const clone = template.content.cloneNode(true);
+        document.body.appendChild(clone);
+    </script>
+
+
+</body>
+</html>
+
+<!--
+    <br><label for="predictiveLabel">Search</label>
+    <input id="predictiveInput" type="text">
+    <script>
+        const input =  document.querySelector('ptrdictiveInput');
+        let texto = ''
+    </script>-->
+
+
+
+
+
+<!--
+const input = document.querySelector('#predictiveInput');
+        let texto = '';
+        const listToSearch = ['rojo', 'azul', 'verde'];
+        let listaFiltrada = [];
+        input.addEventListener('input', ({data}) => {
+            texto += data;
+            listaFiltrada = listToSearch.filter((element) => {
+                return element === texto || element.includes(texto);
+            });
+            if(listaFiltrada.length > 0) {
+                const ul = document.createElement('ol');
+                listaFiltrada.forEach((option) => {
+                    const li = document.createElement('li');
+                    li.innerText = option;
+                    ul.appendChild(li);
+                    document.body.appendChild(ul);
+                });
+            }
+        });-->

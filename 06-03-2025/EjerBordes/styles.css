@@ -1,0 +1,22 @@
+body {
+    display: flex;
+    /*display: grid;*/
+    justify-content: center;
+    /*place-items: center;*/
+    height: 100vh;
+    margin: 0;
+}
+h1 {
+    text-align: center;
+}
+
+.box  {
+    width: 400px;
+    height: 400px;
+    background-color: #faebd7;
+    border-top: 10px solid #ff0000;
+    border-bottom: 7px dotted #000000;
+    border-right: 8px solid #0000ff;
+    border-left: 5px dashed #008000;
+
+}

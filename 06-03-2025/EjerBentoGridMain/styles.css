@@ -1,0 +1,214 @@
+@font-face {
+    font-family: 'FontVariable1';
+    src: url('./assets/fonts/DMSans-Italic-VariableFont_opsz,wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'FontVariable2';
+    src: url('./assets/fonts/DMSans-VariableFont_opsz,wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FontStatic3';
+    src: url('./assets/fonts/static/DMSans-Medium.ttf') format('truetype');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'FontStatic4';
+    src: url('./assets/fonts/static/DMSans-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'FontStatic5';
+    src: url('./assets/fonts/static/DMSans-Regular.ttf') format('truetype');
+    font-weight: 400;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'FontVariable2', sans-serif;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+h1, h2 {
+    font-family: 'FontVariable1', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+h3 {
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+.p-seg {
+    font-size: 20px;
+    padding: 10px;
+    text-align: justify;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.socialmedia {
+    padding-top: 20px;
+}
+
+.purple-square {
+    background-color: hsl(256, 67%, 59%);
+    color: hsl(0, 0%, 100%);
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+    margin: 10px;
+}
+
+.mark {
+    color: hsl(39, 100%, 71%);
+}
+
+.mark2 {
+    font-weight: bold;
+    color: hsl(256, 67%, 59%);
+}
+
+#stars {
+    width: 250px;
+    display: flex;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+.platform {
+    padding: 20px;
+}
+
+.white-square {
+    background-color: hsl(0, 0%, 100%);
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+#icon {
+    width: 450px;
+    display: block;
+    margin: 10px auto;
+    padding-top: 20px;
+}
+
+.text {
+    margin-top: -10px;
+    text-align: left;
+    font-size: 28px;
+    color: hsl(0, 0%, 7%);
+}
+
+.text2 {
+    margin-top: -10px;
+    text-align: justify;
+    font-size: 35px;
+    color: hsl(0, 0%, 7%);
+}
+
+.posting-schedule {
+    padding: 20px;
+}
+
+.yellow-square {
+    background-color: hsl(39, 100%, 71%);
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+#schedule {
+    width: 150px;
+    height: 120px;
+    margin-right: 185px;
+    margin-bottom: -20px;
+}
+
+.time-post img {
+    width: 250px;
+    height: 250px;
+    margin-top: 10px;
+}
+
+.lightpurple-square {
+    background-color: hsl(254, 88%, 90%);
+    padding: 15px;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.text-center {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: hsl(0, 0%, 7%);
+}
+
+.grow-followers h3 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.Faster-audience h2 {
+    text-align: left;
+    font-size: 2rem;
+    color: hsl(256, 67%, 59%);
+    font-weight: bold;
+}
+
+.create-post, .ai {
+    padding: 20px;
+}
+
+.lightpink-square {
+    background-color: hsl(31, 66%, 93%);
+    padding: 15px;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+#img-audience {
+    width: 100px;
+    height: 60px;
+    margin-right: 185px;
+    margin-bottom: -20px;
+}
+
+#img-ai {
+    width: 200px;
+    height: 200px;
+    margin-right: 185px;
+    margin-bottom: -20px;
+}
+
+#img-post {
+    width: 200px;
+    height: 100px;
+    margin-right: 185px;
+    margin-bottom: -20px;
+}

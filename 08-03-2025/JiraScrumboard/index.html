@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JiraScurmBoard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <section class="header"></section>
+            <section id="inputRelease">
+                <h1>Board</h1>
+                <button id="release">Release</button>
+                <img id="points" src="https://www.svgrepo.com/show/80953/three-dots-menu.svg" alt="threePoints">
+            </section>
+            <section id="inputSearch">
+                <input id="search" name="search" type="text">
+                <button id="buscar" onclick="buscar()"><img src="https://www.clipartmax.com/images/icon-search.png"
+                        alt="lupa"></button>
+                <details id="filters">
+                    <summary id="filter">
+                        <p>Quick Filters</p>
+                    </summary>
+                        <ul>
+                            <li>TO DO</li>
+                            <li>IN PROGRESS</li>
+                            <li>CODE REVIEW</li>
+                            <li>DONE</li>
+                        </ul>
+                </details>
+            </section>
+        </section>
+    </header>
+
+    <main>
+        <section class="board">
+            
+            <section class="column" id="toDo">
+                <h3>TO DO</h3>
+
+                <article class="card" draggable="true">
+                    <p class="cardName">Engage Jupiter Express for outer solar system travel</p>
+                    <span class="space">SPACE TRAVELS PARTNERS</span>
+                    <div class="footerCard">
+                        <img class="icons" src="https://previews.123rf.com/images/ahasoft2000/ahasoft20001604/ahasoft2000160400678/55071181-yes-tick-glyph-toolbar-icon-for-software-design-style-is-a-white-symbol-on-a-square-blue-background.jpg" 
+                                alt="check">
+                        <img class="icons" src="https://c1.klipartz.com/pngpicture/326/668/sticker-png-arrow-red-logo-triangle-line-software-extension-editing-sign-material-property.png" 
+                                alt="flechas">
+                        <p class="tis">TIS-25</p>
+                        <img class="foto" src="/Users/cristiansaulrodriguezramos/Desktop/BecaCellsEjercicios2025/08-03-2025/JiraScrumboard/img/foto.jpeg" alt="foto">
+                    </div> 
+                </article>
+
+                <article class="card" draggable="true">
+                    <p class="cardName">Create 90 day plans for all departments in the Mars Office</p>
+                    <span class="mars">LOCAL MARS OFFICE</span>
+                    <div class="footerCard">
+                        <img class="icons" src="https://www.clipartmax.com/png/middle/150-1500880_upload-art-home-icon-green-png.png" alt="upload">
+                        <img class="icons" src="https://thumbs.dreamstime.com/b/red-stop-icon-transparent-background-no-symbol-vector-red-stop-icon-transparent-background-no-symbol-vector-illustration-146081781.jpg" alt="forbidden">
+                        <p class="tis">TIS-12</p>
+                    </div> 
+                </article>
+
+                <article class="card" draggable="true">
+                    <p class="cardName">ENGAGE Saturn's Rings Resort as a preferred provider</Ri:a></p>
+                    <span class="space">SPACE TRAVELS PARTNERS</span>
+                    <div class="footerCard">
+                        <img class="icons" src="https://www.clipartmax.com/png/middle/150-1500880_upload-art-home-icon-green-png.png" alt="upload">
+                        <img class="icons" src="https://c1.klipartz.com/pngpicture/326/668/sticker-png-arrow-red-logo-triangle-line-software-extension-editing-sign-material-property.png" alt="flechas">
+                        <p class="tis">TIS-17</p>
+                        <img class="foto" src="/Users/cristiansaulrodriguezramos/Desktop/BecaCellsEjercicios2025/08-03-2025/JiraScrumboard/img/foto.jpeg" alt="foto">
+                    </div> 
+                </article>
+
+                <article class="card" draggable="true">
+                    <p class="cardName">Enable Speedy SpaceCraft as the preferred</p>
+                    <span class="plus">SEESPACEEZ PLUS</span>
+                    <div class="footerCard">
+                        <img class="icons" src="https://cdn-icons-png.flaticon.com/512/3936/3936736.png" alt="save">
+                        <img class="icons" src="https://c1.klipartz.com/pngpicture/326/668/sticker-png-arrow-red-logo-triangle-line-software-extension-editing-sign-material-property.png" alt="flechas">
+                        <p class="tis">TIS-8</p>
+                        <img class="foto" src="/Users/cristiansaulrodriguezramos/Desktop/BecaCellsEjercicios2025/08-03-2025/JiraScrumboard/img/foto.jpeg" alt="foto">
+                    </div> 
+                </article>
+
+            </section>
+
+            <section class="column" id="inProgress">
+                <h3>IN PROGRESS</h3>
+
+                <article class="card" draggable="true">
+                    <p class="cardName">Requesting available flights is now taking > 5 seconds</p>
+                    <span class="plus">SEESPACEEZ PLUS</span>
+                    <div class="footerCard">
+                        <img class="icons" src="https://cdn-icons-png.flaticon.com/512/3936/3936736.png" alt="save">
+                        <img class="icons" src="https://c1.klipartz.com/pngpicture/326/668/sticker-png-arrow-red-logo-triangle-line-software-extension-editing-sign-material-property.png" alt="flechas">
+                        <p class="tis"><s>TIS-8</s></p>
+                        <img class="foto" src="/Users/cristiansaulrodriguezramos/Desktop/BecaCellsEjercicios2025/08-03-2025/JiraScrumboard/img/foto.jpeg" alt="foto">
+                    </div> 
+                </article>
+
+                <article class="card" draggable="true">
+                    <p class="cardName">Engage Saturn Shuttle Lines for groups tours</p>
+                    <span class="space">SPACE TRAVELS PARTNERS</span>
+                    <div class="footerCard">
+                        <img class="icons" src="https://previews.123rf.com/images/ahasoft2000/ahasoft20001604/ahasoft2000160400678/55071181-yes-tick-glyph-toolbar-icon-for-software-design-style-is-a-white-symbol-on-a-square-blue-background.jpg" alt="check">
+                        <img class="icons" src="https://c1.klipartz.com/pngpicture/326/668/sticker-png-arrow-red-logo-triangle-line-software-extension-editing-sign-material-property.png" alt="flechas">
+                        <p class="tis">TIS-15</p>
+                        <img class="foto" src="/Users/cristiansaulrodriguezramos/Desktop/BecaCellsEjercicios2025/08-03-2025/JiraScrumboard/img/foto.jpeg" alt="foto">
+                    </div> 
+                </article>
+
+                <article class="card" draggable="true">
+                    <p class="cardName">Establish a catering vendor to provide meal service</Ri:a></p>
+                    <span class="mars">LOCAL MARS OFFICE</span>
+                    <div class="footerCard">
+                        <img class="icons" src="https://www.shareicon.net/data/128x128/2015/09/22/105553_gear_512x512.png" alt="tool">
+                        <img class="icons" src="https://c1.klipartz.com/pngpicture/326/668/sticker-png-arrow-red-logo-triangle-line-software-extension-editing-sign-material-property.png" alt="flechas">
+                        <p class="tis">TIS-15</p>
+                        <img class="foto" src="/Users/cristiansaulrodriguezramos/Desktop/BecaCellsEjercicios2025/08-03-2025/JiraScrumboard/img/foto.jpeg" alt="foto">
+                    </div> 
+                </article>
+
+                <article class="card" draggable="true">
+                    <p class="cardName">Engage Saturn Shuttle Lines for groups tours</p>
+                    <span class="space">SPACE TRAVELS PARTNERS</span>
+                    <div class="footerCard">
+                        <img class="icons" src="https://previews.123rf.com/images/ahasoft2000/ahasoft20001604/ahasoft2000160400678/55071181-yes-tick-glyph-toolbar-icon-for-software-design-style-is-a-white-symbol-on-a-square-blue-background.jpg" alt="check">
+                        <img class="icons" src="https://c1.klipartz.com/pngpicture/326/668/sticker-png-arrow-red-logo-triangle-line-software-extension-editing-sign-material-property.png" alt="flechas">
+                        <p class="tis">TIS-15</p>
+                        <img class="foto" src="/Users/cristiansaulrodriguezramos/Desktop/BecaCellsEjercicios2025/08-03-2025/JiraScrumboard/img/foto.jpeg" alt="foto">
+                    </div> 
+                </article>
+            </section>
+
+            <section class="column" id="codeReview">
+                <h3>CODE REVIEW</h3>
+
+                <article class="card" draggable="true">
+                    <p class="cardName">Register with the Mars Ministry of Revenue</p>
+                    <span class="mars">LOCAL MARS OFFICE</span>
+                    <div class="footerCard">
+                        <img class="icons" src="https://cdn-icons-png.flaticon.com/512/3936/3936736.png" alt="save">
+                        <img class="icons" src=https://c1.klipartz.com/pngpicture/326/668/sticker-png-arrow-red-logo-triangle-line-software-extension-editing-sign-material-property.png" alt="flechas">
+                        <p class="tis">TIS-11</p>
+                    </div> 
+                </article>
+                <article class="card" draggable="true">
+                    <p class="cardName">Draft network plan for Mars Office</p>
+                    <span class="mars">LOCAL MARS OFFICE</span>
+                    <div class="footerCard">
+                        <img class="icons" src="https://previews.123rf.com/images/ahasoft2000/ahasoft20001604/ahasoft2000160400678/55071181-yes-tick-glyph-toolbar-icon-for-software-design-style-is-a-white-symbol-on-a-square-blue-background.jpg" alt="check">
+                        <img class="icons" src="https://c1.klipartz.com/pngpicture/326/668/sticker-png-arrow-red-logo-triangle-line-software-extension-editing-sign-material-property.png" alt="flechas">
+                        <p class="tis">TIS-15</p>
+                        <img class="foto" src="/Users/cristiansaulrodriguezramos/Desktop/BecaCellsEjercicios2025/08-03-2025/JiraScrumboard/img/foto.jpeg" alt="foto">
+                    </div> 
+                </article>
+
+            </section>
+
+            <section class="column" id="done">
+                <h3>DONE</h3>
+
+                <article class="card" draggable="true">
+                    <p class="cardName">Homepage footer uses an inline style -should use a class</p>
+                    <span class="support">LARGE TEAM SUPPORT</span>
+                    <div class="footerCard">
+                        <img class="icons" src="https://www.clipartmax.com/png/middle/150-1500880_upload-art-home-icon-green-png.png" alt="upload">
+                        <img class="icons" src="https://c1.klipartz.com/pngpicture/326/668/sticker-png-arrow-red-logo-triangle-line-software-extension-editing-sign-material-property.png" alt="flechas">
+                        <p class="tis">TIS-68</p>
+                        <img class="foto" src="/Users/cristiansaulrodriguezramos/Desktop/BecaCellsEjercicios2025/08-03-2025/JiraScrumboard/img/foto.jpeg" alt="foto">
+                    </div> 
+                </article>
+
+                <article class="card" draggable="true">
+                    <p class="cardName">Enage JetShutle SpaceWays for travel</p>
+                    <span class="space">SPACE TRAVELS PARTNERS</span>
+                    <div class="footerCard">
+                        <img class="icons" src="https://cdn-icons-png.flaticon.com/512/3936/3936736.png" alt="save">
+                        <img class="icons" src="https://c1.klipartz.com/pngpicture/326/668/sticker-png-arrow-red-logo-triangle-line-software-extension-editing-sign-material-property.png" alt="flechas">
+                        <p class="tis">TIS-23</p>
+                        <img class="foto" src="/Users/cristiansaulrodriguezramos/Desktop/BecaCellsEjercicios2025/08-03-2025/JiraScrumboard/img/foto.jpeg" alt="foto">
+                    </div> 
+                </article>
+
+                <article class="card" draggable="true">
+                    <p class="cardName">Engage Saturn Shuttle Lines for group tours</p>
+                    <span class="space">SPACE TRAVELS PARTNERS</span>
+                    <div class="footerCard">
+                        <img class="icons" src="https://previews.123rf.com/images/ahasoft2000/ahasoft20001604/ahasoft2000160400678/55071181-yes-tick-glyph-toolbar-icon-for-software-design-style-is-a-white-symbol-on-a-square-blue-background.jpg" alt="check">
+                        <img class="icons" src="https://c1.klipartz.com/pngpicture/326/668/sticker-png-arrow-red-logo-triangle-line-software-extension-editing-sign-material-property.png" alt="flechas">
+                        <p class="tis">TIS-15</p>
+                        <img class="foto" src="/Users/cristiansaulrodriguezramos/Desktop/BecaCellsEjercicios2025/08-03-2025/JiraScrumboard/img/foto.jpeg" alt="foto">
+                    </div> 
+                </article>
+
+                <article class="card" draggable="true">
+                    <p class="cardName">Establish a catering vendor to provide meal service</p>
+                    <span class="mars">LOCAL MARS OFFICE</span>
+                    <div class="footerCard">
+                        <img class="icons" src="https://www.shareicon.net/data/128x128/2015/09/22/105553_gear_512x512.png" alt="tool">
+                        <img class="icons" src="https://c1.klipartz.com/pngpicture/326/668/sticker-png-arrow-red-logo-triangle-line-software-extension-editing-sign-material-property.png" alt="flechas">
+                        <p class="tis">TIS-15</p>
+                        <img class="foto" src="/Users/cristiansaulrodriguezramos/Desktop/BecaCellsEjercicios2025/08-03-2025/JiraScrumboard/img/foto.jpeg" alt="foto">
+                    </div> 
+                </article>
+
+            </section>
+        </section>
+
+    </main>
+    
+    <aside>
+        <section class="blue-line">
+            <article>
+                <div class="part1">
+                    <img src="https://res.cloudinary.com/imagist/image/fetch/q_auto,f_auto,c_scale,w_360/https%3A%2F%2Fimages.ctfassets.net%2Fdm4oa8qtogq0%2F3sLA4m726qEdgbDhZVQ3Tw%2F12a33481f6ccc132860b5ad131d8c120%2Fintegration-logo-jira-1.jpg" 
+                            alt="jira-logo">
+                    <button onclick="buscar()"><img src="https://www.clipartmax.com/images/icon-search.png"
+                            alt="lupa"></button>
+                    <button onclick="verMas()"><img src="https://previews.123rf.com/images/asmati/asmati1706/asmati170605916/80929989-s%C3%ADmbolo-positivo-m%C3%A1s-signo-vector-icono-blanco-con-suave-sombra-sobre-fondo-transparente.jpg"
+                            alt="ver-mas"></button>
+                </div>
+                <div class="part2">
+                    <button onclick="mostrarAyuda()"><img src="https://w7.pngwing.com/pngs/317/872/png-transparent-youtube-play-button-computer-icons-help-text-trademark-sign-thumbnail.png" 
+                            alt="ayuda"></button>
+                    <img src="/Users/cristiansaulrodriguezramos/Desktop/BecaCellsEjercicios2025/08-03-2025/JiraScrumboard/img/foto.jpeg" 
+                            alt="img-saul">
+                </div>
+            </article>
+        </section>
+        
+        <section class="menu">
+            <article id="menuTitle">
+                <img src="" alt="">
+                <p id="title">Teams in Space</p>
+                <p id="subtitle">Software project</p>
+            </article>
+
+            <article class="options">
+                <div class="option">
+                    <img src="" alt="">
+                    <p>Backlog</p>
+                </div>
+                <div class="option">
+                    <img src="" alt="">
+                    <p>Board</p>
+                </div>
+                <div class="option">
+                    <img src="" alt="">
+                    <p>Reports</p>
+                </div>
+                <div class="option">
+                    <img src="" alt="">
+                    <p>Releases</p>
+                </div>
+                <div class="option">
+                    <img src="" alt="">
+                    <p>Components</p>
+                </div>
+                <div class="option">
+                    <img src="" alt="">
+                    <p>Issues</p>
+                </div>
+                <div class="option">
+                    <img src="" alt="">
+                    <p>Repository</p>
+                </div>
+                <div class="option">
+                    <img src="" alt="">
+                    <p>Add item</p>
+                </div>
+                <div class="option">
+                    <img src="" alt="">
+                    <p>Settings</p>
+                </div>
+            </article>
+        </section>
+    </aside>
+</body>
+</html>

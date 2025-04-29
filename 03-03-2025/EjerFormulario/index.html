@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ejercicio Formulario Productos</title>
+        <style>
+            h1 {
+                text-align: center;
+            }
+    
+            .table {
+                width: 50%;
+                border: 1px solid black; 
+                margin: auto;
+                table-layout: fixed;
+            }
+
+            .table tbody td {
+                text-align: center; 
+                vertical-align: middle;
+            }           
+    
+            .contenedor_form {
+                width: 65%;
+                margin: 0 auto;
+                padding: 20 px;
+                border: 2 px solid black;
+                text-align: center;
+            }
+                
+            .contenedor_text {
+                width: 65%;
+                margin: 0 auto;
+                padding: 0 px;
+                border: 0 px solid black;
+                text-align: justify;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>EJERCICIO FORMULARIO DE PRODUCTOS</h1>
+        <div class="contenedor_text">
+            <p>
+                Generar un formulario con 'n' inputs para crear una tabla que represente una lista de productos.
+                La tabla tendrá los siguientes características:
+            </p>
+            <ul>
+                <li>Encabezados que describan las columnas: Producto, precio, descripción</li>
+                <li>Algunas celdas que estén combinadas usando colspan o rowspan</li>
+                <li>Diferentes estilos para algunas celdas (colores, bordes, etc.)</li>
+            </ul>
+        </div>
+        <br>
+        <div class="contenedor_form">
+            <form id="forms" action="code.js" method="post">
+                <p><b>Completa la informacion</b> a continuación para conocer la información que deseas agregar a la lista de productos:</p>
+                <br>
+                <label for="producto">Producto: </label>
+                <input id="producto" name="producto" type="text" required>
+                <br><br>
+                <label for="precio">Precio: </label>
+                <input id="precio" name="precio" type="number" required>
+                <br><br><br>
+                <h4>Agrega una breve descripcion</h4>
+                <textarea name="descripcion" id="descripcion"></textarea>
+                <p> Click en el boton ACEPTAR para registrar la informacion a en la tabla </p>
+                <button type="submit">ACEPTAR</button>
+            </form>
+            <br><br>
+
+        </div>
+        <table id="table" border="1" class="table" style="background-color: white; width: 50%; height: 100%;">
+            <tr style="background: orange;text-align: center; color:black;">
+                <th colspan="3">TIENDA DE SAUL <br>LISTA DE PRODUCTOS</th><br>
+            </tr>
+            <tr>
+                <th>PRODUCTO</th>
+                <th>PRECIO</th>
+                <th>DESCRIPCION</th>
+            </tr>
+            <tbody>
+                <!-- Espacio con el que se rellenará la tabla-->
+            </tbody>
+        </table>
+    <script src="code.js"></script>
+    </body>
+</html>

@@ -1,0 +1,61 @@
+/*general*/
+* { /*estilsos generales*/
+    margin: 0;
+
+}
+/*id*/
+#title { /* estilos para elementos en particular, por ejemplo para un parrafp en particular*/
+    color: blue;
+}
+/*clase*/
+.bold { /* cuando se sabe que van para todo un elemento por ejemplo para todos los parrafos */
+    font-weight: bold;
+}
+/*type*/
+p {
+    color: aqua;
+}
+
+/*pseudo type*/
+p:hover {
+    color: green;
+}
+
+/*pseudo element*/
+p::first-letter{
+    color: orange;
+    text-transform: uppercase;
+}
+/*attribute*/
+p [class="bold"] {
+    color: yellow;
+}
+/*class*/
+.bold {
+    font-weight: bold;
+    color: black;
+}
+/*combinacion de reglas*/
+p.bold {
+    font-weight: bold;
+    color: gray;
+}
+
+/*caracteres combinadores ' ', >, +  para buscar elementos dentro de otros */
+
+/*El comnbinador > hijos, tiene 3 selectores de tipo*/
+section > article > p {
+    color: red;
+}
+/*El comnbinador > hijos, tiene 2 selectores de tipo*/
+section > p {
+    color: red;
+}
+/* ' ' desendientes, tiene dos selectores de tipo  */
+section p { 
+    color: brown;
+}
+/* + hermanos*/
+h1 + p {
+     color: darkblue;
+}
